@@ -5,7 +5,7 @@ class shortMers:
     dna_components = ['A', 'C', 'G', 'T']
 
 
-    def _init_(self, length_of_shortmer,numberOfSet):
+    def __init__(self, length_of_shortmer,numberOfSet):
         self.length_of_shortmer = length_of_shortmer
         #self.shortmers = []
         #self.letters = []
@@ -25,7 +25,7 @@ class shortMers:
 
 
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     param1 = 3
     param2 = 16
     shortmers = shortMers(param1,param2)
