@@ -11,7 +11,13 @@ dna_components = ['A', 'C', 'G', 'T']
 
 # Generate a set of shortmers
 def generate_shortmers(shortmer_length, num_shortmers):
-    return [''.join(random.choices(dna_components, k=shortmer_length)) for _ in range(num_shortmers)]
+    shortmers = []
+    for _ in range(num_shortmers):
+        shortmer = ''.join(random.choices(dna_components, k=shortmer_length))
+        shortmers.append(shortmer)
+    return shortmers
+
+    #return [''.join(random.choices(dna_components, k=shortmer_length)) for _ in range(num_shortmers)]
 
 
 
@@ -23,7 +29,12 @@ def create_combinatorial_alphabet(shortmers, num_shortmers_per_symbol):
 
 # Design file consists of sequences designed over the combinatorial alphabet
 def create_design_file(alphabet, num_sequences):
-    return [random.choice(alphabet) for _ in range(num_sequences)]
+    design_file = []
+    for _ in range(num_sequences):
+        sequence = random.choice(alphabet)
+        design_file.append(sequence)
+    return design_file
+    #return [random.choice(alphabet) for _ in range(num_sequences)]
 
 
 
@@ -31,7 +42,12 @@ def create_design_file(alphabet, num_sequences):
 # Step 2: Simulate DNA Reads
 # Generate DNA sequences from combinatorial alphabet symbols
 def generate_dna_sequences(design_file):
-    return [''.join(sequence) for sequence in design_file]
+    dna_sequences = []
+    for sequence in design_file:
+        dna_sequence = ''.join(sequence)
+        dna_sequences.append(dna_sequence)
+    return dna_sequences
+    #return [''.join(sequence) for sequence in design_file]
 
 
 
@@ -48,6 +64,7 @@ def generate_reads(dna_sequences, mean_reads, std_dev):
 # Main simulation function
 def simulate_combinatorial_dna(shortmer_length, num_shortmers, num_shortmers_per_symbol, num_sequences, mean_reads=30, std_dev=5):
     shortmers = generate_shortmers(shortmer_length, num_shortmers)
+    print(shortmers)
     alphabet = create_combinatorial_alphabet(shortmers, num_shortmers_per_symbol)
     design_file = create_design_file(alphabet, num_sequences)
     dna_sequences = generate_dna_sequences(design_file)
