@@ -54,12 +54,6 @@ def simulate_combinatorial_dna(shortmer_length, num_shortmers, num_shortmers_per
     reads = generate_reads(dna_sequences, mean_reads, std_dev)
     return reads
 
-'''
-short_mers = generate_shortmers(3 , 16)
-print(short_mers)
-print(create_combinatorial_alphabet(short_mers, 5))
-'''
-
 
 # Example usage
 shortmer_length = 3  # length of each shortmer
