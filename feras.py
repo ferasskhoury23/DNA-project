@@ -1,29 +1,46 @@
 import random
 from itertools import combinations
 import numpy as np
+import pandas as pd
 
 #comb(n,k)  n b7ar k (n nCr k) returns the number itself
 #combinations returns the whole combinations themselfs
 
-
+# Load the design file
+file_path = 'design.csv'
+design_df = pd.read_csv(file_path)
 
 dna_components = ['A', 'C', 'G', 'T']
 
+
+def replace_symbols(sequence, alphabet_symbols):
+    for symbol, replacement in alphabet_symbols.items():
+        sequence = sequence.replace(symbol, replacement)
+    return sequence
+
+
+
 # Generate a set of shortmers
-def generate_shortmers(shortmer_length, num_shortmers):
+def generate_shortmers(shortmer_length, num_shortmers):   # fix repetition
     shortmers = []
     for _ in range(num_shortmers):
         shortmer = ''.join(random.choices(dna_components, k=shortmer_length))
         shortmers.append(shortmer)
     return shortmers
 
-    #return [''.join(random.choices(dna_components, k=shortmer_length)) for _ in range(num_shortmers)]
 
-
+shortmers = generate_shortmers()
 
 # Create combinatorial alphabet symbols (each symbol is a set of num_shortmers_per_symbol shortmers)
 def create_combinatorial_alphabet(shortmers, num_shortmers_per_symbol):
     return list(combinations(shortmers, num_shortmers_per_symbol))
+
+print(create_combinatorial_alphabet(generate_shortmers(3 , 16) , 5))
+print("------------------------------------------------------------------")
+
+
+
+
 
 
 
@@ -64,10 +81,11 @@ def generate_reads(dna_sequences, mean_reads, std_dev):
 # Main simulation function
 def simulate_combinatorial_dna(shortmer_length, num_shortmers, num_shortmers_per_symbol, num_sequences, mean_reads=30, std_dev=5):
     shortmers = generate_shortmers(shortmer_length, num_shortmers)
-    print(shortmers)
     alphabet = create_combinatorial_alphabet(shortmers, num_shortmers_per_symbol)
     design_file = create_design_file(alphabet, num_sequences)
+    print("design_file is : ", design_file)
     dna_sequences = generate_dna_sequences(design_file)
+    print("dna_sequences is : ", dna_sequences)
     reads = generate_reads(dna_sequences, mean_reads, std_dev)
     return reads
 
