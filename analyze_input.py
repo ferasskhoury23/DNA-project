@@ -89,10 +89,68 @@ def test(list_of_lists , num_of_copies , dict):
     return result
 
 
+def test_shortmers(list_of_lists , num_of_copies , dict , data):
+    tmp = []
+    result = []
+
+    for _ in list_of_lists:
+        # Initialize tmp as a list of empty lists, one for each copy
+        tmp = [[] for _ in range(num_of_copies)]
+
+
+    for line in list_of_lists:
+        for sequence in line:
+
+            if sequence.startswith('Z'):
+                listNormal = normalize( dict[sequence], num_of_copies)
+                for j in range(num_of_copies):
+                     tmp[j].append( data[listNormal[j]])
+            else:
+                for k in range(num_of_copies):
+                    tmp[k].append(sequence)
+        result.append(tmp)
+
+    return result
+
+
+
+# Define a function to convert keys (lists) to strings for JSON serialization
+def list_to_str(lst):
+    return ', '.join(lst)
+
+
+def dump_out_symbols(file_path , result , list_of_lines):
+    my_dict = {}
+    for line, res in zip(list_of_lines, result):
+        my_dict[list_to_str(line)] = res
+    try:
+        # Attempt to open the file in 'x' mode (exclusive creation)
+        with open(file_path, 'w') as f:
+            json.dump(my_dict, f, indent=4)
+        print(f"JSON data written to '{file_path}'")
+
+    except FileExistsError:
+        print(f"The file '{file_path}' already exists. Creation failed.")
+
+
+def dump_out_sequences(file_path , result , list_of_lines):
+    my_dict = {}
+    for line, res in zip(list_of_lines, result):
+        my_dict[list_to_str(line)] = res
+    try:
+        # Attempt to open the file in 'x' mode (exclusive creation)
+        with open(file_path, 'w') as f:
+            json.dump(my_dict, f, indent=4)
+        print(f"JSON data written to '{file_path}'")
+
+    except FileExistsError:
+        print(f"The file '{file_path}' already exists. Creation failed.")
+
 
 if __name__ == '__main__':
 
     data = analyze_input('files/shortmers.json')
+
     numOfShort = number_of_shortmers(data)
     print(numOfShort)
     shortSize = shortmer_size(data)
@@ -103,17 +161,21 @@ if __name__ == '__main__':
     my_dict = alphabet_as_dict(alphabet)
 
     #print(my_dict)
-    list_of_lists = dna_input('files/sequence_design_file.dna')
-    print(list_of_lists)
+    list_of_lines = dna_input('files/sequence_design_file.dna')
+    print(list_of_lines)
 
     print("-------------------------------------------------------------------------------------------")
 
 
-    result = test(list_of_lists,4 , my_dict)
+    result = test(list_of_lines,4 , my_dict)
+    result2 = test_shortmers(list_of_lines,4 , my_dict , data)
 
     print("-------------------------------------------------------------------------------------------")
     print("finished test")
     print(result)
+
+    dump_out_symbols('files/output_symbols.json', result , list_of_lines )
+    dump_out_sequences('files/output_sequence.json', result2, list_of_lines)
 
 
 
