@@ -1,8 +1,14 @@
 import json
 import numpy as np
 
-""" Generate a list with num_copies of the given element. Args: -
-    element: The element to generate copies of. - num_copies: Number of copies to generate. Returns: - List containing num_copies of the element. """
+""" 
+    simulations - Project 1.0
+    
+    Generate a list with num_copies of the given element. Args: -
+    element: The element to generate copies of. - num_copies: Number of copies to generate. Returns: - 
+    List containing num_copies of the element. 
+"""
+
 def generate_copies(sequence, num_copies):
     return [sequence] * num_copies
 
@@ -55,7 +61,6 @@ def run_shortmers(list_of_lists , num_of_copies , dict , data):
     for _ in list_of_lists:
         # Initialize tmp as a list of empty lists, one for each copy
         tmp = [[] for _ in range(num_of_copies)]
-
 
     for line in list_of_lists:
         for sequence in line:
