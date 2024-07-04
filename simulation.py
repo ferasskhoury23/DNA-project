@@ -31,18 +31,19 @@ def normalize(list_of_shortmers, num_of_copies):
     return copies
 
 
+def clear_list(list , num_copies):
+    tmp = []
+    for _ in list:
+        # Initialize tmp as a list of empty lists, one for each copy
+        tmp = [[] for _ in range(num_copies)]
+    return tmp
+
 def run(list_of_lists , num_of_copies , dict):
     tmp = []
     result = []
-
-    for _ in list_of_lists:
-        # Initialize tmp as a list of empty lists, one for each copy
-        tmp = [[] for _ in range(num_of_copies)]
-
-
     for line in list_of_lists:
+        tmp = clear_list(list_of_lists , num_of_copies)
         for sequence in line:
-
             if sequence.startswith('Z'):
                 listNormal = normalize( dict[sequence], num_of_copies)
                 for j in range(num_of_copies):
@@ -55,16 +56,11 @@ def run(list_of_lists , num_of_copies , dict):
 
 
 def run_shortmers(list_of_lists , num_of_copies , dict , data):
-    tmp = []
     result = []
-
-    for _ in list_of_lists:
-        # Initialize tmp as a list of empty lists, one for each copy
-        tmp = [[] for _ in range(num_of_copies)]
-
+    tmp = []
     for line in list_of_lists:
+        tmp = clear_list(list_of_lists , num_of_copies)
         for sequence in line:
-
             if sequence.startswith('Z'):
                 listNormal = normalize( dict[sequence], num_of_copies)
                 for j in range(num_of_copies):
@@ -87,7 +83,7 @@ def dump_out_symbols(file_path , result , list_of_lines):
     for line, res in zip(list_of_lines, result):
         my_dict[list_to_str(line)] = res
     try:
-        # Attempt to open the file in 'x' mode (exclusive creation)
+        # Attempt to open the file in 'w' mode (exclusive creation)
         with open(file_path, 'w') as f:
             json.dump(my_dict, f, indent=4)
         print(f"The simulation output (with symbols) is written to '{file_path}'")

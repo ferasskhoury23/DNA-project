@@ -14,8 +14,8 @@ def dump_alphabets(alphabets , file_path):
 
 
 if __name__ == '__main__':
-    num_of_copies = 20
-    shortmers_dict = analyze_input.analyze_shortmers('C:files/shortmers.json')
+    num_of_copies = 5 # switch to normal distribution
+    shortmers_dict = analyze_input.analyze_shortmers('files/shortmers.json')
     analyze_input.visualize_dictionary(shortmers_dict)
 
     numOfShort = analyze_input.number_of_shortmers(shortmers_dict)
