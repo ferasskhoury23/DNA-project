@@ -1,8 +1,6 @@
 import json
 from itertools import combinations
 import matplotlib.pyplot as plt
-import numpy as np
-import random
 import pandas as pd
 import seaborn as sns
 
@@ -14,32 +12,29 @@ The input is json file while the keys are the symbols (X1 , X2 .....) the values
 In this file we implemented function that helps building the combinatorial alphabet with some other relative functions
 """
 
-# This Function loads the shortmers for sa specific file given a path
+#This function reads the shortmers json file given a path , and returns it as a dict
 def analyze_shortmers(path):
     with open(path, 'r') as file:
         data_dict = json.load(file)
         return data_dict
 
-# This Function return number of shortmers give a dict
-def number_of_shortmers(data_dict):
-    return len(data_dict)
+#this function return number,size (pair) of shortmers given a dict
+def number_size_of_shortmers_(data_dict):
+    return len(data_dict) , len(data_dict['X1'])
 
-# This Function returns the size of shortmer give a dict
-def shortmer_size(data_dict):
-    return len(data_dict['X1'])
 
-# This Function creates the alphabet out of the shortmers given the size of every letter's subset
+'''This function creates the alphabet out of the shortmers given the size of every letter's subset.
+The function returns a list,dictionary pair , containing all the combinations of all possible alphabets'''
 def create_combinatorial_alphabet(shortmers_dict , num_shortmers_per_symbol):
     shortmers_keys = list(shortmers_dict.keys())
-    return list(combinations(shortmers_keys, num_shortmers_per_symbol))
-
-# This Function make the alphabet as a dict keys is indexes of letters (Z1 , Z1080 ...) values is the subset of values
-def alphabet_as_dict(alphabet):
-    return {f'Z{i + 1}': alphabet[i] for i in range(len(alphabet))}
+    alphabet_list = list(combinations(shortmers_keys, num_shortmers_per_symbol))
+    alphabet_as_dict = {f'Z{i + 1}': alphabet_list[i] for i in range(len(alphabet_list))}
+    return alphabet_list,alphabet_as_dict
 
 
 
-# This Function loads the DNA sequences
+'''This function loads the DNA sequences
+returns a list of lists where each list contains the whole DNA sequence(each line is a list) '''
 def dna_input(file_path):
     list_of_lists = []
     with open(file_path, 'r') as file:
@@ -50,7 +45,8 @@ def dna_input(file_path):
 
 
 
-# This Function Visualizes the dictionary in a formatted style with keys and values aligned in columns
+
+
 def visualize_dictionary(data):
     num_columns = 2
     num_rows = len(data) // num_columns + (len(data) % num_columns > 0)
