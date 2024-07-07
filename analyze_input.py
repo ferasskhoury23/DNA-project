@@ -3,6 +3,9 @@ from itertools import combinations
 import matplotlib.pyplot as plt
 import numpy as np
 import random
+import pandas as pd
+import seaborn as sns
+
 
 """    
 analyze_input - Project 1.0
@@ -33,6 +36,8 @@ def create_combinatorial_alphabet(shortmers_dict , num_shortmers_per_symbol):
 # This Function make the alphabet as a dict keys is indexes of letters (Z1 , Z1080 ...) values is the subset of values
 def alphabet_as_dict(alphabet):
     return {f'Z{i + 1}': alphabet[i] for i in range(len(alphabet))}
+
+
 
 # This Function loads the DNA sequences
 def dna_input(file_path):
@@ -74,35 +79,24 @@ def visualize_dictionary(data):
     plt.show()
 
 
-# This Function Visualizes a subset of the given dictionary of shortmers in a decorated matrix.
-def visualize_alphabet(data, num_letters=20):
-    if num_letters > len(data):
-        raise ValueError("num_letters is greater than the number of available letters in the data.")
 
-    # Visualize random letters
-    letters_to_visualize = random.sample(list(data.keys()), num_letters)
-    shortmers = sorted(list(next(iter(data.values()))))  # Assuming all sets have the same shortmers
+def visualize_alphabet(alphabet, shortmers_dict):
+       # Create a set of all shortmers
+    all_shortmers = sorted(set(shortmer for shortmers in alphabet.values() for shortmer in shortmers))
 
-    matrix = np.zeros((len(shortmers), num_letters))
+    # Create a DataFrame with shortmers as rows and sigmas as columns
+    df = pd.DataFrame(0, index=all_shortmers, columns=alphabet.keys())
 
-    for col, letter in enumerate(letters_to_visualize):
-        for row, shortmer in enumerate(shortmers):
-            if shortmer in data[letter]:
-                matrix[row, col] = 1
+    # Fill the DataFrame with presence (1) of shortmers
+    for sigma, shortmers in alphabet.items():
+        for shortmer in shortmers:
+            df.at[shortmer, sigma] = 1
 
-    fig, ax = plt.subplots()
-    ax.matshow(matrix, cmap='Greys')
-
-    ax.set_xticks(np.arange(len(letters_to_visualize)))
-    ax.set_yticks(np.arange(len(shortmers)))
-
-    ax.set_xticklabels(letters_to_visualize, rotation=90)
-    ax.set_yticklabels(shortmers)
-
-    ax.set_xlabel('Letters')
-    ax.set_ylabel('Shortmers')
-
+    # Plot the heatmap
+    plt.figure(figsize=(12, 8))
+    sns.heatmap(df, cmap="Greys", cbar=False, linewidths=.5, linecolor='black')
+    plt.xlabel('Sigma')
+    plt.ylabel('Shortmer')
+    plt.title('Shortmer Presence Across Sigmas')
     plt.show()
-
-
 

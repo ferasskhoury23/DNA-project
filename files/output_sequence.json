@@ -3,35 +3,21 @@
         [
             "CCTTCTCCGGAGTGATGAAC",
             "GGA",
-            "AGC",
             "GCC",
-            "TGG"
-        ],
-        [
-            "CCTTCTCCGGAGTGATGAAC",
-            "AAT",
-            "TCT",
-            "CAC",
-            "ATG"
-        ],
-        [
-            "CCTTCTCCGGAGTGATGAAC",
-            "CCG",
-            "CCG",
             "TAA",
             "ACA"
         ],
         [
             "CCTTCTCCGGAGTGATGAAC",
-            "GGA",
-            "TCT",
-            "ACA",
-            "ACA"
+            "CCG",
+            "CTA",
+            "CAC",
+            "ATG"
         ],
         [
             "CCTTCTCCGGAGTGATGAAC",
-            "GGA",
-            "CTA",
+            "AAT",
+            "AGC",
             "ACA",
             "CCG"
         ]
@@ -39,38 +25,24 @@
     "CCAAGCCGGAATGTCTCATA, Z89, Z4318, Z618, Z3723": [
         [
             "CCAAGCCGGAATGTCTCATA",
-            "CGT",
-            "GAG",
-            "GTT",
-            "TGG"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "AAT",
-            "CTA",
-            "AAT",
-            "CGT"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "AAT",
-            "GAG",
-            "ATG",
-            "TTC"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "AGC",
+            "ACA",
             "GAG",
             "CCG",
             "TAA"
         ],
         [
             "CCAAGCCGGAATGTCTCATA",
+            "CGT",
+            "GAG",
             "AAT",
-            "GTT",
-            "ATG",
-            "TGG"
+            "CGT"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "AAT",
+            "CTA",
+            "AAT",
+            "CCG"
         ]
     ]
 }
