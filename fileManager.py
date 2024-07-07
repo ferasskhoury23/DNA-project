@@ -74,8 +74,8 @@ def dump_out_statistics(file_path , stats_dict):
         return None
 
 
-# This Function creates a file with the alphabet that we created out of the shortmers
-def dump_alphabets(alphabets , file_path):
+# This Function creates a json file from the alphabet dict we created
+def dump_alphabets(alphabets_dict , file_path):
     with open(file_path, 'w') as f:
-        json.dump(alphabets, f, indent=4)
+        json.dump(alphabets_dict, f, indent=4)
     print(f"The alphabet is written to '{file_path}'.")

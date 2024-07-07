@@ -1,5 +1,5 @@
 import numpy as np
-
+from analyze_input import InputAnalyze
 """ 
     simulations - Project 2.0
     
@@ -7,6 +7,49 @@ import numpy as np
     element: The element to generate copies of. - num_copies: Number of copies to generate. Returns: - 
     List containing num_copies of the element. 
 """
+
+
+'''gets our input data and returns :
+    list of list of lists that contains the simulated output but only with shortmers symbols
+'''
+def run(InputAnalyze,stats_dict):
+    result = []
+    for line in InputAnalyze.list_of_lines:
+        tmp = clear_list(InputAnalyze.list_of_lines , InputAnalyze.num_of_copies)
+        for sequence in line:
+            if sequence.startswith('Z'):
+                listNormal = normalize( InputAnalyze.alphabet_dict[sequence], InputAnalyze.num_of_copies)
+                for j in range(InputAnalyze.num_of_copies):
+                    update_stats(stats_dict, sequence, listNormal[j] , InputAnalyze.alphabet_dict)
+                    tmp[j].append( listNormal[j])
+            else:
+                for k in range(InputAnalyze.num_of_copies):
+                    tmp[k].append(sequence)
+        result.append(tmp)
+    return result,stats_dict
+
+'''
+gets our input data and returns :
+a list of list of lists that contains the simulated output but with the whole sequences
+'''
+def run_shortmers(InputAnalyze):
+    result = []
+    for line in InputAnalyze.list_of_lines:
+        tmp = clear_list(InputAnalyze.list_of_lines , InputAnalyze.num_of_copies)
+        for sequence in line:
+            if sequence.startswith('Z'):
+                listNormal = normalize( InputAnalyze.alphabet_dict[sequence], InputAnalyze.num_of_copies)
+                for j in range(InputAnalyze.num_of_copies):
+                    tmp[j].append( InputAnalyze.shortmers_dict[listNormal[j]])
+            else:
+                for k in range(InputAnalyze.num_of_copies):
+                    tmp[k].append(sequence)
+        result.append(tmp)
+    return result
+
+
+
+
 
 def generate_copies(sequence, num_copies):
     return [sequence] * num_copies
@@ -34,44 +77,6 @@ def clear_list(list , num_copies):
         tmp = [[] for _ in range(num_copies)]
     return tmp
 
-'''gets a list of the input lines , num of copies and the dict of alphabets 
-    returns a list of list of lists that contains the shortmers
-'''
-def run(list_of_lines , num_of_copies , alphabet_dict , stats_dict):
-    result = []
-    for line in list_of_lines:
-        tmp = clear_list(list_of_lines , num_of_copies)
-        for sequence in line:
-            if sequence.startswith('Z'):
-                listNormal = normalize( alphabet_dict[sequence], num_of_copies)
-                for j in range(num_of_copies):
-                    update_stats(stats_dict, sequence, listNormal[j] , alphabet_dict)
-                    tmp[j].append( listNormal[j])
-            else:
-                for k in range(num_of_copies):
-                    tmp[k].append(sequence)
-        result.append(tmp)
-    return result,stats_dict
-
-
-'''gets a list of the input lines , num of copies and the dict of alphabets 
-    returns a list of list of lists that contains the original alphabets
-'''
-def run_shortmers(list_of_lines , num_of_copies , alphabet_dict , data ):
-    result = []
-    for line in list_of_lines:
-        tmp = clear_list(list_of_lines , num_of_copies)
-        for sequence in line:
-            if sequence.startswith('Z'):
-                listNormal = normalize( alphabet_dict[sequence], num_of_copies)
-                for j in range(num_of_copies):
-                    tmp[j].append( data[listNormal[j]])
-            else:
-                for k in range(num_of_copies):
-                    tmp[k].append(sequence)
-        result.append(tmp)
-    return result
-
 
 def update_stats(stats_dict, key, shortmer , alphabet_dict):
     if key in stats_dict:
@@ -79,5 +84,3 @@ def update_stats(stats_dict, key, shortmer , alphabet_dict):
     else:
         stats_dict.update({key:{value:0 for value in alphabet_dict[key]}})
         stats_dict[key][shortmer] += 1
-
-
