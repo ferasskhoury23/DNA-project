@@ -1,5 +1,15 @@
 import json
 
+'''
+This function reads the json file given a path , and returns it as a dict
+it is used to read the shortmers input and other uses 
+'''
+def json_to_dict(path):
+    with open(path, 'r') as file:
+        data_dict = json.load(file)
+        return data_dict
+
+
 def list_to_str(lst):
     return ', '.join(lst)
 
@@ -17,47 +27,29 @@ def generate_copies_dict(translations_dict):
         result_dict[key] = result_list
     return result_dict
 
-
-
 '''
-dumps the simulation output to a file , with symbols
+dumps the simulation output to a json file .
+returns it as a dict
 '''
-def dump_out_symbols(file_path , result , list_of_lines , as_string = False):
+def dump_out_sim(file_path , result , list_of_lines ,barcode_dict ,with_symbols=False ,as_string=False):
     my_dict = {}
     for line, res in zip(list_of_lines, result):
-        my_dict[list_to_str(line)] = res
+        my_dict[find_key_by_value(barcode_dict, line)] = res
     if (as_string):
         my_dict = generate_copies_dict(my_dict)
     try:
-        # Attempt to open the file in 'w' mode (exclusive creation)
         with open(file_path, 'w') as f:
             json.dump(my_dict, f, indent=4)
         if as_string:
-            print(f"The simulation output (with symbols) is written to '{file_path}' AS STRINGS")
+            if with_symbols:
+                print(f"The simulation output (with symbols) is written to '{file_path}' AS STRINGS")
+            else:
+                print(f"The simulation output (with the whole sequences) is written to '{file_path}' AS STRINGS")
         else:
-            print(f"The simulation output (with symbols) is written to '{file_path}'")
-        return my_dict
-    except FileExistsError:
-        print(f"The file '{file_path}' already exists. Creation failed.")
-        return None
-
-'''
-dumps the simulation output to a file , with sequences
-'''
-def dump_out_sequences(file_path , result , list_of_lines  ,as_string = False):
-    my_dict = {}
-    for line, res in zip(list_of_lines, result):
-        my_dict[list_to_str(line)] = res
-    if(as_string):
-        my_dict = generate_copies_dict(my_dict)
-    try:
-        # Attempt to open the file in 'w' mode (exclusive creation)
-        with open(file_path, 'w') as f:
-            json.dump(my_dict, f, indent=4)
-        if(as_string):
-            print(f"The simulation output (with the whole sequences) is written to '{file_path}' AS STRINGS")
-        else:
-            print(f"The simulation output (with the whole sequences) is written to '{file_path}'")
+            if with_symbols:
+                print(f"The simulation output (with symbols) is written to '{file_path}'")
+            else:
+                print(f"The simulation output (with the whole sequences) is written to '{file_path}'")
         return my_dict
     except FileExistsError:
         print(f"The file '{file_path}' already exists. Creation failed.")
@@ -74,7 +66,9 @@ def dump_out_statistics(file_path , stats_dict):
         return None
 
 
-# This Function creates a json file from the alphabet dict we created
+'''
+this Function creates a json file from the alphabet dict we created
+'''
 def dump_alphabets(alphabets_dict , file_path):
     with open(file_path, 'w') as f:
         json.dump(alphabets_dict, f, indent=4)

@@ -49,8 +49,6 @@ def run_shortmers(InputAnalyze):
 
 
 
-
-
 def generate_copies(sequence, num_copies):
     return [sequence] * num_copies
 

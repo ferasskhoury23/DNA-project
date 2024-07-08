@@ -1,48 +1,230 @@
 {
-    "CCTTCTCCGGAGTGATGAAC, Z1196, Z3344, Z1962, Z1572": [
+    "ABC": [
         [
             "CCTTCTCCGGAGTGATGAAC",
-            "AAT",
-            "AGC",
-            "CAC",
-            "CCG"
+            "TTC",
+            "TCT",
+            "TGG",
+            "TGG"
         ],
         [
             "CCTTCTCCGGAGTGATGAAC",
+            "GAG",
+            "AGC",
+            "TGG",
+            "TGG"
+        ],
+        [
+            "CCTTCTCCGGAGTGATGAAC",
+            "TTC",
+            "GCC",
+            "TGG",
+            "ATG"
+        ],
+        [
+            "CCTTCTCCGGAGTGATGAAC",
+            "AAT",
             "CCG",
+            "TAA",
+            "ACA"
+        ],
+        [
+            "CCTTCTCCGGAGTGATGAAC",
+            "GAG",
+            "TCT",
+            "TGG",
+            "ATG"
+        ],
+        [
+            "CCTTCTCCGGAGTGATGAAC",
+            "AAT",
+            "GCC",
+            "TAA",
+            "ATG"
+        ],
+        [
+            "CCTTCTCCGGAGTGATGAAC",
+            "GGA",
+            "AGC",
+            "TGG",
+            "ACA"
+        ],
+        [
+            "CCTTCTCCGGAGTGATGAAC",
+            "TTC",
+            "TCT",
+            "TGG",
+            "ACA"
+        ],
+        [
+            "CCTTCTCCGGAGTGATGAAC",
+            "TTC",
+            "GCC",
+            "GCC",
+            "TGG"
+        ],
+        [
+            "CCTTCTCCGGAGTGATGAAC",
+            "GGA",
+            "GCC",
+            "TGG",
+            "TGG"
+        ],
+        [
+            "CCTTCTCCGGAGTGATGAAC",
+            "GAG",
             "CTA",
             "ACA",
             "ACA"
         ],
         [
             "CCTTCTCCGGAGTGATGAAC",
-            "GAG",
             "CCG",
+            "GCC",
             "TAA",
             "TGG"
+        ],
+        [
+            "CCTTCTCCGGAGTGATGAAC",
+            "TTC",
+            "GCC",
+            "TAA",
+            "ACA"
+        ],
+        [
+            "CCTTCTCCGGAGTGATGAAC",
+            "TTC",
+            "TCT",
+            "GCC",
+            "ACA"
+        ],
+        [
+            "CCTTCTCCGGAGTGATGAAC",
+            "TTC",
+            "TCT",
+            "GCC",
+            "ACA"
+        ],
+        [
+            "CCTTCTCCGGAGTGATGAAC",
+            "GGA",
+            "CCG",
+            "CAC",
+            "CCG"
         ]
     ],
-    "CCAAGCCGGAATGTCTCATA, Z89, Z4318, Z618, Z3723": [
+    "CGT": [
         [
             "CCAAGCCGGAATGTCTCATA",
-            "AAT",
-            "GAG",
-            "GTT",
+            "AGC",
+            "GCC",
+            "ATG",
             "TTC"
         ],
         [
             "CCAAGCCGGAATGTCTCATA",
             "AGC",
-            "CAC",
-            "CCG",
+            "GTT",
+            "GCC",
+            "TTC"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "ACA",
+            "GCC",
+            "ATG",
+            "TGG"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "AGC",
+            "GTT",
+            "ATG",
+            "TGG"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "AGC",
+            "GAG",
+            "GCC",
             "TAA"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "ACA",
+            "GAG",
+            "ATG",
+            "TGG"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "AGC",
+            "GTT",
+            "ATG",
+            "TGG"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "AAT",
+            "GCC",
+            "ATG",
+            "TAA"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "AGC",
+            "GCC",
+            "ATG",
+            "TTC"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "ACA",
+            "GCC",
+            "AAT",
+            "CCG"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "AGC",
+            "GTT",
+            "AAT",
+            "CCG"
         ],
         [
             "CCAAGCCGGAATGTCTCATA",
             "CGT",
             "CTA",
+            "GTT",
+            "TTC"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "ACA",
+            "GCC",
+            "ATG",
+            "CCG"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "AGC",
+            "GAG",
             "AAT",
+            "TAA"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "AAT",
+            "GCC",
+            "ATG",
             "CGT"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "ACA",
+            "GAG",
+            "CCG",
+            "CCG"
         ]
     ]
 }
