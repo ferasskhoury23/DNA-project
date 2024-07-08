@@ -73,3 +73,9 @@ def dump_alphabets(alphabets_dict , file_path):
     with open(file_path, 'w') as f:
         json.dump(alphabets_dict, f, indent=4)
     print(f"The alphabet is written to '{file_path}'.")
+
+def find_key_by_value(dictionary, value):
+    for key, val in dictionary.items():
+        if val == value:
+            return key
+    return None

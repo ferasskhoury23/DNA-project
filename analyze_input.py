@@ -9,6 +9,7 @@ analyze_input - Project 2.0
 The input is json file while the keys are the symbols (X1 , X2 .....) the values are the Shortmers 
 In this file we implemented function that helps building the combinatorial alphabet with some other relative functions
 """
+
 class InputAnalyze:
     shortmers_dict: dict
     alphabet_list: list
@@ -46,8 +47,10 @@ def number_size_of_shortmers_(data_dict):
     return len(data_dict) , len(data_dict['X1'])
 
 
-'''This function creates the alphabet out of the shortmers given the size of every letter's subset.
-The function returns a list,dictionary pair , containing all the combinations of all possible alphabets'''
+'''
+This function creates the alphabet out of the shortmers given the size of every letter's subset.
+The function returns a list,dictionary pair , containing all the combinations of all possible alphabets
+'''
 def create_combinatorial_alphabet(shortmers_dict , num_shortmers_per_symbol):
     shortmers_keys = list(shortmers_dict.keys())
     alphabet_list = list(combinations(shortmers_keys, num_shortmers_per_symbol))
@@ -55,8 +58,11 @@ def create_combinatorial_alphabet(shortmers_dict , num_shortmers_per_symbol):
     return (alphabet_list, alphabet_as_dict)
 
 
-'''This function loads the DNA sequences
-returns a list of lists where each list contains the whole DNA sequence(each line is a list) '''
+'''
+This function loads the DNA sequences
+returns a list of lists where each list contains the whole DNA sequence(each line is a list)
+also builds a dictionary where each key is the barcode and the values are the strands 
+'''
 def dna_input(file_path):
     list_of_lists = []
     dna_dict = {}
