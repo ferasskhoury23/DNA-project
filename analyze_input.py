@@ -1,3 +1,4 @@
+import math
 from itertools import combinations
 from math import log2, ceil
 import fileManager as fm
@@ -11,11 +12,11 @@ In this file we implemented function that helps building the combinatorial alpha
 """
 
 class InputAnalyze:
-    shortmers_dict: dict
+    shortmers_dict: dict #each key is a symbol and the value is 'ACGT' sequence
     alphabet_list: list
-    alphabet_dict: dict
+    alphabet_dict: dict #each key is number of segma (Z255) and the value is a list of shortmers that defines the segma
     list_of_lines: list
-    dict_of_lines: dict
+    dict_of_lines: dict #each key is a barcode and the value is the dna input sequence
     num_of_copies: int
     numOfShortmers: int
     shortmerSize: int
@@ -27,16 +28,16 @@ class InputAnalyze:
         self.sequence_design_file_path = sequence_design_file_path
         self.num_of_copies = num_of_copies
         self.shortmers_dict = fm.json_to_dict(shortmers_file_path)
-        self.numOfShortmers, self.shortmerSize = number_size_of_shortmers_(self.shortmers_dict)
-        self.alphabet_list, self.alphabet_dict = create_combinatorial_alphabet(self.shortmers_dict, 5)
+        (self.numOfShortmers, self.shortmerSize) = number_size_of_shortmers_(self.shortmers_dict)
+        (self.alphabet_list, self.alphabet_dict) = create_combinatorial_alphabet(self.shortmers_dict, 5)  #num_shortmers_per_symbol should come from input
         self.number_of_alphabets = len(self.alphabet_dict)
-        self.list_of_lines, self.dict_of_lines = dna_input(sequence_design_file_path)
+        (self.list_of_lines, self.dict_of_lines) = dna_input(sequence_design_file_path)
         fm.dump_alphabets(self.alphabet_dict , 'files/alphabets.json')
     def print_input_stats(self):
         print("--------------------------------Input Statistics----------------------------------")
         print(f"num of shortmers is : {self.numOfShortmers}")
         print("shortmer size is : ", self.shortmerSize)
-        print(f"number of alphabets is : {self.number_of_alphabets} , therfore we need {ceil(log2(self.number_of_alphabets))} bits")
+        print(f"number of alphabets is : {self.number_of_alphabets} , therfore we need {math.floor(log2(self.number_of_alphabets))} bits")
         print("--------------------------------Input stats finished----------------------------------------------------")
 
 
@@ -44,7 +45,7 @@ class InputAnalyze:
 
 #this function return number,size (pair) of shortmers given a dict
 def number_size_of_shortmers_(data_dict):
-    return len(data_dict) , len(data_dict['X1'])
+    return (len(data_dict) , len(data_dict['X1']))
 
 
 '''
@@ -71,4 +72,4 @@ def dna_input(file_path):
             sequences = line.strip().split(',')
             list_of_lists.append(sequences[1:])
             dna_dict[sequences[0]] = sequences[1:]
-    return list_of_lists, dna_dict
+    return (list_of_lists, dna_dict)

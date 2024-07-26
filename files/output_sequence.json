@@ -3,8 +3,71 @@
         [
             "CCTTCTCCGGAGTGATGAAC",
             "GAG",
-            "GCC",
+            "CCG",
+            "ACA",
+            "TGG"
+        ],
+        [
+            "CCTTCTCCGGAGTGATGAAC",
+            "CCG",
+            "AGC",
+            "ACA",
+            "GAG"
+        ],
+        [
+            "CCTTCTCCGGAGTGATGAAC",
+            "GGA",
+            "AGC",
+            "CAC",
+            "ACA"
+        ],
+        [
+            "CCTTCTCCGGAGTGATGAAC",
+            "AAT",
+            "CTA",
             "TAA",
+            "ATG"
+        ],
+        [
+            "CCTTCTCCGGAGTGATGAAC",
+            "CCG",
+            "GCC",
+            "ACA",
+            "ATG"
+        ],
+        [
+            "CCTTCTCCGGAGTGATGAAC",
+            "TTC",
+            "CCG",
+            "TAA",
+            "GAG"
+        ],
+        [
+            "CCTTCTCCGGAGTGATGAAC",
+            "TTC",
+            "CTA",
+            "TGG",
+            "ACA"
+        ],
+        [
+            "CCTTCTCCGGAGTGATGAAC",
+            "AAT",
+            "TCT",
+            "TAA",
+            "TGG"
+        ],
+        [
+            "CCTTCTCCGGAGTGATGAAC",
+            "GGA",
+            "GCC",
+            "GCC",
+            "ATG"
+        ],
+        [
+            "CCTTCTCCGGAGTGATGAAC",
+            "GGA",
+            "CCG",
+            "CAC",
             "TGG"
         ],
         [
@@ -12,163 +75,142 @@
             "TTC",
             "AGC",
             "TGG",
-            "TGG"
+            "ATG"
         ],
         [
             "CCTTCTCCGGAGTGATGAAC",
-            "TTC",
-            "GCC",
+            "GAG",
+            "AGC",
             "ACA",
             "ACA"
         ],
         [
             "CCTTCTCCGGAGTGATGAAC",
             "AAT",
-            "AGC",
-            "TAA",
-            "TGG"
-        ],
-        [
-            "CCTTCTCCGGAGTGATGAAC",
-            "TTC",
-            "AGC",
-            "TAA",
-            "TGG"
-        ],
-        [
-            "CCTTCTCCGGAGTGATGAAC",
-            "TTC",
-            "TCT",
-            "TAA",
-            "TGG"
-        ],
-        [
-            "CCTTCTCCGGAGTGATGAAC",
-            "GAG",
-            "CTA",
-            "CAC",
-            "ATG"
-        ],
-        [
-            "CCTTCTCCGGAGTGATGAAC",
-            "GGA",
-            "AGC",
-            "TGG",
-            "TGG"
-        ],
-        [
-            "CCTTCTCCGGAGTGATGAAC",
-            "GAG",
             "TCT",
             "ACA",
-            "ACA"
-        ],
-        [
-            "CCTTCTCCGGAGTGATGAAC",
-            "TTC",
-            "GCC",
-            "TAA",
-            "CCG"
-        ],
-        [
-            "CCTTCTCCGGAGTGATGAAC",
-            "CCG",
-            "AGC",
-            "TGG",
             "GAG"
         ],
         [
             "CCTTCTCCGGAGTGATGAAC",
             "GGA",
-            "TCT",
-            "TAA",
+            "GCC",
+            "ACA",
             "TGG"
+        ],
+        [
+            "CCTTCTCCGGAGTGATGAAC",
+            "CCG",
+            "TCT",
+            "ACA",
+            "GAG"
         ]
     ],
     "CGT": [
         [
             "CCAAGCCGGAATGTCTCATA",
             "AGC",
-            "GTT",
-            "CCG",
-            "CCG"
+            "CAC",
+            "GCC",
+            "TAA"
         ],
         [
             "CCAAGCCGGAATGTCTCATA",
             "AGC",
             "GAG",
+            "GCC",
+            "CCG"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "TAA",
+            "GTT",
+            "ATG",
+            "TTC"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "ACA",
+            "CTA",
+            "CCG",
+            "TTC"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "AAT",
+            "GAG",
+            "CCG",
+            "TGG"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "TAA",
+            "CTA",
+            "ATG",
+            "TTC"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "AGC",
+            "CAC",
+            "ATG",
+            "CCG"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "ACA",
+            "CAC",
             "AAT",
             "CGT"
         ],
         [
             "CCAAGCCGGAATGTCTCATA",
             "CGT",
-            "GTT",
-            "GCC",
-            "TAA"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "AAT",
-            "GCC",
-            "AAT",
-            "TGG"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "ACA",
-            "GCC",
-            "AAT",
-            "CCG"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "AGC",
             "CTA",
             "AAT",
-            "TGG"
+            "CCG"
         ],
         [
             "CCAAGCCGGAATGTCTCATA",
             "ACA",
-            "GTT",
+            "GCC",
             "AAT",
             "TTC"
         ],
         [
             "CCAAGCCGGAATGTCTCATA",
-            "AGC",
-            "GAG",
-            "ATG",
+            "CGT",
+            "GTT",
+            "GCC",
             "TGG"
         ],
         [
             "CCAAGCCGGAATGTCTCATA",
-            "TAA",
-            "GAG",
+            "CGT",
+            "CTA",
             "GCC",
             "CCG"
         ],
         [
             "CCAAGCCGGAATGTCTCATA",
             "TAA",
-            "GCC",
-            "ATG",
-            "TGG"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "AAT",
-            "GAG",
+            "GTT",
             "AAT",
             "TTC"
         ],
         [
             "CCAAGCCGGAATGTCTCATA",
-            "AAT",
+            "CGT",
+            "GAG",
             "GTT",
-            "ATG",
-            "TAA"
+            "TTC"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "AAT",
+            "CAC",
+            "GTT",
+            "CCG"
         ]
     ]
 }

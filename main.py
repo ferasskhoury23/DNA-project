@@ -17,23 +17,29 @@ def pick_number(min , max):
             return round(number)
 
 
+#consider make a class of all user inputs : num of copies , files paths.
+
 if __name__ == '__main__':
     stats_dict = {}
     num_of_copies = pick_number(5 , 20)
     error_rate = 0.05
     #num_of_copies = 4
 
-    shortmers_file_path = 'files/input_shortmers.json'
-    sequence_design_file_path = 'files/sequence_design_file.dna'
+    shortmers_file_path = 'files/input_shortmers.json'    #consider make the paths as class
+    sequence_design_file_path = 'files/sequence_design_file.dna' #consider make the paths as class
+
     Input = analyze_input.InputAnalyze(num_of_copies, shortmers_file_path, sequence_design_file_path)
     Input.print_input_stats()
     print("---------------------got all the input , and it is analyzed , now simulate.----------------")
 
-
-    '''simulate with symbols'''
-    result_with_symbols, stats_dict = simulation.run(Input, stats_dict)
+    print("number of copies is :" , num_of_copies)
+    '''
+    simulate with symbols
+    we use stats_dict only with symbols so that we can print stats for each shortmer used    
+    '''
+    (result_with_symbols, stats_dict) = simulation.run(Input, stats_dict)
     fm.dump_out_sim('files/output_symbols_str.json', result_with_symbols, Input.list_of_lines,Input.dict_of_lines, True, True)
-    fm.dump_out_sim('files/output_symbols.json', result_with_symbols, Input.list_of_lines,Input.dict_of_lines, True)
+    out_dict_list_of_shortmers = fm.dump_out_sim('files/output_symbols.json', result_with_symbols, Input.list_of_lines,Input.dict_of_lines, True)
     fm.dump_out_statistics('files/output_statistics.json', stats_dict)
 
 
@@ -43,15 +49,28 @@ if __name__ == '__main__':
     fm.dump_out_sim('files/output_sequence.json', result_with_sequence, Input.list_of_lines,Input.dict_of_lines)
 
 
-    print("-------------------------------------------------------------------------------------------")
-    print("finished the simulation :")
-    print("------------------------------------------------start errors:-------------------------------------")
-    print(dict_seq_str)
-    print("-------------------------------------------------------------------------------------------")
-    print(er.plant_error(dict_seq_str, num_of_copies, error_rate))
+
+
+    #print("-------------------------------------------------------------------------------------------")
+    #print("finished the simulation :")
+    #print("------------------------------------------------start errors:-------------------------------------")
+  #  print(dict_seq_str)
+   # print("-------------------------------------------------------------------------------------------")
+    #print(er.plant_error(dict_seq_str, num_of_copies, error_rate ,out_dict_list_of_shortmers, Input.shortmers_dict))
+
+
+
     #gr.visualize_dictionary(Input.shortmers_dict)
     #gr.visualize_alphabet(Input.alphabet_dict)
 
+    print("-------------------------------------------------------------------------------------------")
+    print("-------------------------------------------------------------------------------------------")
+    print("------------------------with shortmerrs----------------------------------------------")
+    print(out_dict_list_of_shortmers)
+    print(er.plant_error(dict_seq_str, num_of_copies, error_rate, out_dict_list_of_shortmers, Input.shortmers_dict, True))
+    print("-------------------------------------------------------------------------------------------")
+    print("-------------------------------------------------------------------------------------------")
+    print("-------------------------------------------------------------------------------------------")
 
 
 
