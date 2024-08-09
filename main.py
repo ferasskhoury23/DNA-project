@@ -22,6 +22,7 @@ def pick_number(min , max):
 if __name__ == '__main__':
     stats_dict = {}
     num_of_copies = pick_number(5 , 20)
+    print("number of copies is :", num_of_copies)
     error_rate = 0.05
     #num_of_copies = 4
 
@@ -32,7 +33,6 @@ if __name__ == '__main__':
     Input.print_input_stats()
     print("---------------------got all the input , and it is analyzed , now simulate.----------------")
 
-    print("number of copies is :" , num_of_copies)
     '''
     simulate with symbols
     we use stats_dict only with symbols so that we can print stats for each shortmer used    
@@ -51,26 +51,29 @@ if __name__ == '__main__':
 
 
 
-    #print("-------------------------------------------------------------------------------------------")
-    #print("finished the simulation :")
-    #print("------------------------------------------------start errors:-------------------------------------")
-  #  print(dict_seq_str)
-   # print("-------------------------------------------------------------------------------------------")
-    #print(er.plant_error(dict_seq_str, num_of_copies, error_rate ,out_dict_list_of_shortmers, Input.shortmers_dict))
-
-
+    print("-------------------------------------------------------------------------------------------")
+    print("finished the simulation :")
+    print("------------------------------------------------start errors:-------------------------------------")
+    print(dict_seq_str)
+    error_dict = er.plant_error(dict_seq_str, num_of_copies, error_rate, out_dict_list_of_shortmers, Input.shortmers_dict)
+    print(error_dict)
+    fm.dict_to_json(error_dict, "files/output_errors_cluster.json")
+    print("-------------------------------------------------------------------------------------------")
+    print("-------------------------------------------------------------------------------------------")
 
     #gr.visualize_dictionary(Input.shortmers_dict)
     #gr.visualize_alphabet(Input.alphabet_dict)
 
-    print("-------------------------------------------------------------------------------------------")
-    print("-------------------------------------------------------------------------------------------")
-    print("------------------------with shortmerrs----------------------------------------------")
-    print(out_dict_list_of_shortmers)
-    print(er.plant_error(dict_seq_str, num_of_copies, error_rate, out_dict_list_of_shortmers, Input.shortmers_dict, True))
-    print("-------------------------------------------------------------------------------------------")
-    print("-------------------------------------------------------------------------------------------")
-    print("-------------------------------------------------------------------------------------------")
+    #print("-------------------------------------------------------------------------------------------")
+    #print("-------------------------------------------------------------------------------------------")
+    #print("------------------------with shortmerrs----------------------------------------------")
+    #print(out_dict_list_of_shortmers)
+    #error_dict_2 = er.plant_error(dict_seq_str, num_of_copies, error_rate, out_dict_list_of_shortmers, Input.shortmers_dict, True)
+    #print(error_dict_2)
+    #fm.dict_to_json(error_dict_2, "files/output_errors_cluster.json")
+    #print("-------------------------------------------------------------------------------------------")
+    #print("-------------------------------------------------------------------------------------------")
+    #print("-------------------------------------------------------------------------------------------")
 
 
 

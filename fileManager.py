@@ -79,3 +79,7 @@ def find_key_by_value(dictionary, value):
         if val == value:
             return key
     return None
+
+def dict_to_json(dictionary, file_path):
+    with open(file_path, 'w') as f:
+        json.dump(dictionary, f, indent=4)

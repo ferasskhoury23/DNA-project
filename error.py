@@ -25,14 +25,11 @@ def sample_plant_errors(original_output, NumOfCopies, error_rate):
     lengthOfStrand = len(original_output[0])
     length_sample = lengthOfStrand * NumOfCopies
     num_errors = math.floor(int(length_sample * error_rate))
-    print("num_errors = before std_dev", num_errors)
-    # להוסיף סטיית תקן עד 20% ורנדומלי
     std_dev = num_errors * 0.2
     # Generate the number of errors with a normal distribution
     num_errors = int(np.random.normal(num_errors, std_dev))
     # Ensure the number of errors is not negative
     num_errors = max(0, num_errors)
-    print("num_errors = after std_dev", num_errors)
     '''
     another way is to iterate the sequences letter by letter , and for each letter we  chose to plant error by 'throwing a coin'
     BUT we did it this - adding std-dev way to optimize the runtime
@@ -101,13 +98,11 @@ def sample_plant_errors_shortmers(shortmers_output, NumOfCopies, error_rate , in
 
     num_of_X_in_cluster = num_of_X * NumOfCopies
     num_errors = math.floor(int(num_of_X_in_cluster * error_rate))
-    print("num_errors = before std_dev", num_errors)
     std_dev = num_errors * 0.2
     # Generate the number of errors with a normal distribution
     num_errors = int(np.random.normal(num_errors, std_dev))
     # Ensure the number of errors is not negative
     num_errors = max(0, num_errors)
-    print("num_errors = after std_dev", num_errors)
 
     '''
     another way is to iterate the sequences letter by letter , and for each letter we  chose to plant error by 'throwing a coin'
@@ -128,11 +123,6 @@ def sample_plant_errors_shortmers(shortmers_output, NumOfCopies, error_rate , in
         elif error_type == 'substitute':
             outputWithErrors[strand_index][shortmer_index] = random.choice(list(input_shortmers.keys()))
     return outputWithErrors
-
-
-
-
-
 
 
 

@@ -1,216 +1,96 @@
 {
     "ABC": [
         [
+            "X7",
             "CCTTCTCCGGAGTGATGAAC",
-            "X12",
+            "X6",
+            "ACGTCC",
+            "X13",
+            "X14"
+        ],
+        [
+            "X9",
+            "CCTTCTCCGGAGTGATGAAC",
             "X15",
+            "ACGTCC",
+            "X2",
+            "X8"
+        ],
+        [
+            "X12",
+            "CCTTCTCCGGAGTGATGAAC",
+            "X4",
+            "ACGTCC",
             "X13",
             "X3"
         ],
         [
-            "CCTTCTCCGGAGTGATGAAC",
             "X1",
-            "X4",
-            "X2",
-            "X9"
-        ],
-        [
             "CCTTCTCCGGAGTGATGAAC",
-            "X7",
-            "X15",
             "X10",
-            "X9"
-        ],
-        [
-            "CCTTCTCCGGAGTGATGAAC",
-            "X12",
-            "X14",
-            "X10",
-            "X14"
-        ],
-        [
-            "CCTTCTCCGGAGTGATGAAC",
-            "X9",
-            "X15",
-            "X13",
-            "X9"
-        ],
-        [
-            "CCTTCTCCGGAGTGATGAAC",
-            "X14",
-            "X15",
-            "X2",
-            "X14"
-        ],
-        [
-            "CCTTCTCCGGAGTGATGAAC",
-            "X7",
-            "X15",
-            "X10",
+            "ACGTCC",
+            "X5",
             "X8"
         ],
         [
+            "X1",
             "CCTTCTCCGGAGTGATGAAC",
             "X14",
-            "X10",
-            "X5",
+            "ACGTCC",
+            "X8",
             "X2"
         ],
         [
+            "X1",
             "CCTTCTCCGGAGTGATGAAC",
             "X14",
-            "X10",
-            "X13",
-            "X14"
-        ],
-        [
-            "CCTTCTCCGGAGTGATGAAC",
-            "X9",
-            "X14",
-            "X2",
-            "X3"
-        ],
-        [
-            "CCTTCTCCGGAGTGATGAAC",
-            "X9",
-            "X4",
-            "X13",
+            "ACGTCC",
+            "X8",
             "X8"
-        ],
-        [
-            "CCTTCTCCGGAGTGATGAAC",
-            "X12",
-            "X4",
-            "X5",
-            "X8"
-        ],
-        [
-            "CCTTCTCCGGAGTGATGAAC",
-            "X9",
-            "X10",
-            "X2",
-            "X8"
-        ],
-        [
-            "CCTTCTCCGGAGTGATGAAC",
-            "X9",
-            "X15",
-            "X2",
-            "X9"
-        ],
-        [
-            "CCTTCTCCGGAGTGATGAAC",
-            "X7",
-            "X15",
-            "X5",
-            "X2"
         ]
     ],
     "CGT": [
         [
             "CCAAGCCGGAATGTCTCATA",
-            "X4",
+            "X2",
+            "X11",
+            "X1",
+            "X16"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X1",
             "X15",
-            "X14",
-            "X7"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "X2",
-            "X11",
-            "X11",
-            "X5"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "X2",
-            "X11",
-            "X11",
-            "X5"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "X16",
-            "X10",
             "X3",
-            "X14"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "X4",
-            "X11",
-            "X3",
-            "X8"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "X16",
-            "X9",
-            "X11",
-            "X16"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "X2",
-            "X13",
-            "X14",
-            "X8"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "X4",
-            "X10",
-            "X10",
-            "X16"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "X4",
-            "X10",
-            "X14",
-            "X16"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "X2",
-            "X11",
-            "X10",
-            "X7"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "X4",
-            "X10",
-            "X14",
-            "X16"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "X5",
-            "X9",
-            "X10",
-            "X7"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "X4",
-            "X9",
-            "X11",
             "X8"
         ],
         [
             "CCAAGCCGGAATGTCTCATA",
             "X1",
-            "X10",
-            "X11",
-            "X5"
+            "X15",
+            "X14",
+            "X16"
         ],
         [
             "CCAAGCCGGAATGTCTCATA",
             "X5",
-            "X9",
-            "X11",
+            "X10",
+            "X3",
             "X8"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X5",
+            "X10",
+            "X1",
+            "X7"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X5",
+            "X15",
+            "X11",
+            "X7"
         ]
     ]
 }
