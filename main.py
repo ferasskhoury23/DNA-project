@@ -5,8 +5,10 @@ import simulation
 import fileManager as fm
 import error as er
 import Graphics as gr
+import SMAIR_error_fixing as fix_test
 """    
-The main - Project 2.0
+The main - Project 3.0
+started fixing the errors we planted in proj2.0
 """
 def pick_number(min , max):
     mean = 12.5
@@ -54,32 +56,28 @@ if __name__ == '__main__':
     print("-------------------------------------------------------------------------------------------")
     print("finished the simulation :")
     print("------------------------------------------------start errors:-------------------------------------")
-    print(dict_seq_str)
     error_dict = er.plant_error(dict_seq_str, num_of_copies, error_rate, out_dict_list_of_shortmers, Input.shortmers_dict)
-    print(error_dict)
     fm.dict_to_json(error_dict, "files/output_errors_cluster.json")
     print("-------------------------------------------------------------------------------------------")
     print("-------------------------------------------------------------------------------------------")
 
-    #gr.visualize_dictionary(Input.shortmers_dict)
-    #gr.visualize_alphabet(Input.alphabet_dict)
-
-    #print("-------------------------------------------------------------------------------------------")
-    #print("-------------------------------------------------------------------------------------------")
-    #print("------------------------with shortmerrs----------------------------------------------")
-    #print(out_dict_list_of_shortmers)
-    #error_dict_2 = er.plant_error(dict_seq_str, num_of_copies, error_rate, out_dict_list_of_shortmers, Input.shortmers_dict, True)
-    #print(error_dict_2)
-    #fm.dict_to_json(error_dict_2, "files/output_errors_cluster.json")
-    #print("-------------------------------------------------------------------------------------------")
-    #print("-------------------------------------------------------------------------------------------")
-    #print("-------------------------------------------------------------------------------------------")
 
 
-
-    '''simulation2'''
+    '''simulation2
     stats_dict_2 = {}
     num_of_copies_2 = math.floor(num_of_copies/4)
     Input_2 = analyze_input.InputAnalyze(num_of_copies_2, shortmers_file_path, sequence_design_file_path)
     result_with_symbols_2, stats_dict_2 = simulation.run(Input_2, stats_dict_2)
-    gr.compare_shortmers(stats_dict , stats_dict_2)
+    '''
+
+    #gr.compare_shortmers(stats_dict , stats_dict_2)
+
+
+    '''testing error fixing'''
+    cluster = error_dict['AAA']
+    print("the original cluster : " , cluster)
+    fix = fix_test.fix_main(cluster , Input.shortmers_dict , num_of_copies , 40 , Input.code_distance ,Input.number_of_shortmers_per_symbol)
+
+    with open("files/testing.txt", "w") as file:
+        for element in fix:
+            file.write(element + "\n")
