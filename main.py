@@ -5,7 +5,7 @@ import simulation
 import fileManager as fm
 import error as er
 #import Graphics as gr
-import SMAIR_error_fixing as fix_test
+import error_fixing as fix_test
 """    
 The main - Project 3.0
 started fixing the errors we planted in proj2.0
@@ -18,7 +18,11 @@ def pick_number(min , max):
         if min <= number <= max:
             return round(number)
 
-
+def helper(dict):
+    result = {}
+    for key, value in dict.items():
+        result[key] = len(dict[key][0])
+    return result
 #consider make a class of all user inputs : num of copies , files paths.
 
 if __name__ == '__main__':
@@ -51,10 +55,8 @@ if __name__ == '__main__':
     dict_seq_str = fm.dump_out_sim('files/output_sequence_str.json', result_with_sequence, Input.list_of_lines,Input.dict_of_lines, False, True)
     fm.dump_out_sim('files/output_sequence.json', result_with_sequence, Input.list_of_lines,Input.dict_of_lines)
 
-    with open("files/smair_testing.txt", "w") as file:
-        for element in dict_seq_str['CCC']:
-            file.write(element + "\n")
-
+    strand_length_dict = helper(dict_seq_str)
+    print(strand_length_dict)
 
     print("-------------------------------------------------------------------------------------------")
     print("finished the simulation :")
@@ -63,6 +65,10 @@ if __name__ == '__main__':
     fm.dict_to_json(error_dict, "files/output_errors_cluster.json")
     print("-------------------------------------------------------------------------------------------")
     print("-------------------------------------------------------------------------------------------")
+
+    after_fixing = fix_test.fix_clusters(error_dict ,strand_length_dict , Input.shortmers_dict , num_of_copies ,Input.number_of_shortmers_per_symbol)
+
+    fm.dict_to_json(after_fixing, "files/final_result.json")
 
 
 
@@ -76,12 +82,4 @@ if __name__ == '__main__':
     #gr.compare_shortmers(stats_dict , stats_dict_2)
 
 
-    '''testing error fixing'''
-    cluster = error_dict['CCC']
-    print("the original cluster : " , cluster)
-    fix = fix_test.fix_main(cluster , Input.shortmers_dict , num_of_copies , 18 , Input.code_distance ,Input.number_of_shortmers_per_symbol)
-
-    with open("files/testing.txt", "w") as file:
-        for element in fix:
-            file.write(element + "\n")
 
