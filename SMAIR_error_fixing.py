@@ -8,7 +8,7 @@ cluster is a list of strings
 def fix_main(cluster, shortmers , num_of_copies, strand_length, code_distance, seqma_length):
     distance_arr = compare_strand_lengths(cluster, strand_length, num_of_copies)
     shortmer_length = len(shortmers['X1'])
-
+    string_rate = 0.7
     #if we dont use .copy() - shallow copy. they will have the same reference in memory
     fixed_cluster = cluster
 
@@ -18,7 +18,10 @@ def fix_main(cluster, shortmers , num_of_copies, strand_length, code_distance, s
     dict_2 = defaultdict(int)
 
     #TODO : we can improve prformance by saving the [j+1] we compute it twice in a row
-    for i in range(strand_length):
+    i = 0
+
+    while i < strand_length:
+        print(i)
         dict_1.clear()
         dict_2.clear()
         for j in range(num_of_copies):
@@ -29,38 +32,48 @@ def fix_main(cluster, shortmers , num_of_copies, strand_length, code_distance, s
 
         #find the key that has the maximum value associated with it.
         max_key1 = max(dict_1, key=dict_1.get)
-        if i == strand_length - 1:
-            fix_string(fixed_cluster , i, num_of_copies,max_key1, 'x' , distance_arr)
-            return fixed_cluster
-        max_key2 = max(dict_2, key=dict_2.get)
+        if (dict_2):
+            max_key2 = max(dict_2, key=dict_2.get)
+        else:
+            max_key2 = 'x'
 
-        if ( (dict_1[max_key1] > num_of_copies*0.5) and (dict_2[max_key2] > num_of_copies*0.5) ):
+        if (i > (strand_length-shortmer_length)):
+            (fixed_cluster, distance_arr) = fix_string(fixed_cluster, i, num_of_copies, max_key1, 'x', distance_arr)
+            i+=1
 
+
+        elif  ((dict_1[max_key1] > num_of_copies * string_rate) and (dict_2[max_key2] > num_of_copies * string_rate) ):
             (fixed_cluster, distance_arr) = fix_string(fixed_cluster, i, num_of_copies, max_key1, max_key2, distance_arr)
+            i+=1
 
-        elif (dict_1[max_key1] > num_of_copies*0.5):
+
+        elif (dict_1[max_key1] > num_of_copies * string_rate):
             (segma1, numOfRep1) = find_dominant_segma(cluster, shortmers, i, shortmer_length, num_of_copies, seqma_length)
             (segma2, numOfRep2) = find_dominant_segma(cluster, shortmers, i+1, shortmer_length, num_of_copies, seqma_length)
             sum1 = 0
             sum2 = 0
-            for i in range(seqma_length):
-                if(i < len(numOfRep1)):
-                    sum1 += numOfRep1[i]
-                if (i < len(numOfRep2)):
-                    sum2 += numOfRep2[i] #TODO check indexes
+            for j in range(seqma_length):
+                if(j < len(numOfRep1)):
+                    sum1 += numOfRep1[j]
+                if (j < len(numOfRep2)):
+                    sum2 += numOfRep2[j] #TODO check indexes
             if (sum2 > sum1):
                 #we assume that the first column is a string according to statistics
                 (fixed_cluster, distance_arr) = fix_string(fixed_cluster, i, num_of_copies, max_key1, 'x',distance_arr)
+
                 fixed_cluster = fix_shortmer(fixed_cluster, shortmers, i+1, shortmer_length, num_of_copies, seqma_length)
+
+
                 i += shortmer_length
+                i+= 1
             else:
                 fixed_cluster = fix_shortmer(fixed_cluster, shortmers, i, shortmer_length, num_of_copies, seqma_length)
-                i += shortmer_length - 1
+                i += shortmer_length
             #TODO : add a boolean from fix_shortmer that is true when there is nothing to fix , then we increment (i) the window manually
 
         else:
             fixed_cluster = fix_shortmer(fixed_cluster, shortmers, i, shortmer_length, num_of_copies, seqma_length)
-            i += shortmer_length - 1
+            i += shortmer_length
 
             #TODO : check if dic(max key) == numOfCopies , because then there is nothing to fix
             # we know that the first column- dict_1(from the two) is part of a string
@@ -135,22 +148,87 @@ def find_dominant_segma(cluster,shortmers,start_index,shortmer_length,num_of_cop
 
 
 def fix_shortmer(fixed_cluster,shortmers,start_index,shortmer_length,num_of_copies,seqma_length):
-    segma = find_dominant_segma(fixed_cluster,shortmers,start_index,shortmer_length,num_of_copies,seqma_length)
+    segma,numofRepeat = find_dominant_segma(fixed_cluster,shortmers,start_index,shortmer_length,num_of_copies,seqma_length)
+    print("--------------------------------------------")
+    print(segma)
     for i in range(num_of_copies):
-        tmp = fixed_cluster[i][start_index: (start_index + shortmer_length)]
-        if tmp in segma:
+
+        if ((start_index + shortmer_length) >= len (fixed_cluster[i])):
+            tmp = fixed_cluster[i][start_index: (start_index + shortmer_length)]
+        else:
+            tmp = fixed_cluster[i][start_index: (start_index + shortmer_length+1)]
+
+        if tmp[0:shortmer_length] in segma:
             continue
         else:
             res = ''
             minChanges = len(tmp)
             for s2 in segma:
-                x = min_edit_distance_sw(tmp,s2)
-                if (minChanges >= x):
-                    res = s2
-                minChanges = min(x,minChanges)
-            fixed_cluster[i] = (fixed_cluster[i][:start_index] + res + fixed_cluster[i][start_index + shortmer_length:])
+                x = transform_string(tmp,s2)
+                if (x != tmp):
+                    w = fixed_cluster[i][:start_index]
+                    if ((start_index + shortmer_length) >= len(fixed_cluster[i])):
+                        fixed_cluster[i] = (w + x)
+                    else:
+                        y = fixed_cluster[i][start_index + shortmer_length + 1:]
+                        fixed_cluster[i] = (w + x + y)
+                    break
+
 
     return fixed_cluster
+
+
+def transform_string(src, des):
+    # Check if either string is empty
+    if not des:
+        return src  # If des is empty, return src as it is
+    if not src:
+        return des  # If src is empty, return des
+
+
+    # If src already starts with des, return it unchanged
+    if src.startswith(des):
+        return src
+
+    # Case 1: Insertion
+    if len(des) > len(src):
+        # Insert the first character of des at the start of src
+        if (des[0] + src == des):
+            return des
+        else:
+            return src
+    for i in range(min(len(src), len(des))):
+        if src[i] != des[i]:  # Characters differ
+            modified_src = src[:i] + des[i] + src[i:]  # Substitute character
+            if modified_src.startswith(des):
+                return modified_src  # Return modified src if it matches des
+
+    # Case 2: Deletion
+        # Try deleting the first character of src
+    if src[1:].startswith(des):
+        return src[1:]  # If it starts with des after deleting the first character
+
+    # Try deleting any character in src
+    for i in range(len(src)):
+        if (src[:i] + src[i + 1:]).startswith(des):
+            return src[:i] + src[i + 1:]  # Return modified src after deletion
+
+    # Case 3: Substitution
+    # Check for substitution at the first differing character
+    for i in range(min(len(src), len(des))):
+        if src[i] != des[i]:  # Characters differ
+            modified_src = src[:i] + des[i] + src[i + 1:]  # Substitute character
+            if modified_src.startswith(des):
+                return modified_src  # Return modified src if it matches des
+
+    # If the last character of src can be substituted
+    if len(src) > len(des):
+        modified_src = src[:-1] + des[-1]  # Substitute last character
+        if modified_src.startswith(des):
+            return modified_src
+
+    return src  # If no valid transformation can be made, return original src
+
 
 def min_edit_distance_sw(s1, s2):
     len1, len2 = len(s1), len(s2)
@@ -217,4 +295,12 @@ def compare_strand_lengths(cluster, strand_length, num_of_copies):
         distance = len(cluster[i]) - strand_length
         distance_arr.append(distance)
     return distance_arr
+
+
+if __name__ == '__main__':
+    source = "wzwyxxy"
+    destination = "wzwzxx"
+    str = transform_string(source, destination)
+
+    print (str)
 

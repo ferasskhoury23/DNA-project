@@ -1,18 +1,18 @@
-import math
+#import math
 import random
 import analyze_input
 import simulation
 import fileManager as fm
 import error as er
-import Graphics as gr
+#import Graphics as gr
 import SMAIR_error_fixing as fix_test
 """    
 The main - Project 3.0
 started fixing the errors we planted in proj2.0
 """
 def pick_number(min , max):
-    mean = 12.5
-    std_dev = 2.5
+    mean = 25
+    std_dev = 5
     while True:
         number = random.gauss(mean, std_dev)
         if min <= number <= max:
@@ -22,8 +22,9 @@ def pick_number(min , max):
 #consider make a class of all user inputs : num of copies , files paths.
 
 if __name__ == '__main__':
+
     stats_dict = {}
-    num_of_copies = pick_number(5 , 20)
+    num_of_copies = pick_number(10 , 40)
     print("number of copies is :", num_of_copies)
     error_rate = 0.05
     #num_of_copies = 4
@@ -50,7 +51,9 @@ if __name__ == '__main__':
     dict_seq_str = fm.dump_out_sim('files/output_sequence_str.json', result_with_sequence, Input.list_of_lines,Input.dict_of_lines, False, True)
     fm.dump_out_sim('files/output_sequence.json', result_with_sequence, Input.list_of_lines,Input.dict_of_lines)
 
-
+    with open("files/smair_testing.txt", "w") as file:
+        for element in dict_seq_str['CCC']:
+            file.write(element + "\n")
 
 
     print("-------------------------------------------------------------------------------------------")
@@ -74,10 +77,11 @@ if __name__ == '__main__':
 
 
     '''testing error fixing'''
-    cluster = error_dict['AAA']
+    cluster = error_dict['CCC']
     print("the original cluster : " , cluster)
-    fix = fix_test.fix_main(cluster , Input.shortmers_dict , num_of_copies , 40 , Input.code_distance ,Input.number_of_shortmers_per_symbol)
+    fix = fix_test.fix_main(cluster , Input.shortmers_dict , num_of_copies , 18 , Input.code_distance ,Input.number_of_shortmers_per_symbol)
 
     with open("files/testing.txt", "w") as file:
         for element in fix:
             file.write(element + "\n")
+

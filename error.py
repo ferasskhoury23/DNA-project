@@ -11,9 +11,29 @@ def random_char():
 This Function take a domain and a the number of random numbers that we want to generate and returns a list 
 with the number of random numbers that we want to generate, where the size of the list is the number of random numbers
 """
-def generate_random_numbers(count, start, end):
-    return [random.randint(start, end) for _ in range(count)]
+#def generate_random_numbers(count, start, end):
+ #   return [random.randint(start, end) for _ in range(count)]
 
+def generate_random_numbers(count, start, end):
+    # Check if the range can accommodate the required count with a minimum distance of 3
+    if count > (end - start) // 3 + 1:
+        raise ValueError("Count exceeds the range of unique numbers available with minimum distance of 3.")
+
+    # Generate a list of possible numbers
+    possible_numbers = list(range(start, end + 1))
+
+    # Shuffle the possible numbers
+    random.shuffle(possible_numbers)
+
+    # Select numbers while maintaining the minimum distance
+    selected_numbers = []
+    for number in possible_numbers:
+        if not selected_numbers or abs(selected_numbers[-1] - number) >= 3:
+            selected_numbers.append(number)
+        if len(selected_numbers) == count:
+            break
+
+    return selected_numbers
 """
 This Function calculates how many error should we add to the original output(list of strings) based on the length of the list which is
 affected by the strand's length and the size of the cluster, and also based on a random error type.
