@@ -21,7 +21,6 @@ def fix_main(cluster, shortmers , num_of_copies, strand_length, code_distance, s
     i = 0
 
     while i < strand_length:
-        print(i)
         dict_1.clear()
         dict_2.clear()
         for j in range(num_of_copies):
