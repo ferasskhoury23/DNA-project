@@ -1,7 +1,8 @@
 import numpy as np
-from analyze_input import InputAnalyze
+
+
 """ 
-    simulations - Project 2.0
+    simulations - Final Version
     
     Generate a list with num_copies of the given element. Args: -
     element: The element to generate copies of. - num_copies: Number of copies to generate. Returns: - 
@@ -9,7 +10,8 @@ from analyze_input import InputAnalyze
 """
 
 
-'''gets our input data and returns :
+'''
+    gets our input data and returns :
     list of list of lists that contains the simulated output but only with shortmers symbols
 '''
 def run(InputAnalyze,stats_dict):

@@ -1,15 +1,15 @@
 import math
 from itertools import combinations
-from math import log2, ceil
+from math import log2
 import fileManager as fm
 
-
-"""
-analyze_input - Project 2.0
+'''
+analyze_input - Final Version
 
 The input is json file while the keys are the symbols (X1 , X2 .....) the values are the Shortmers 
 In this file we implemented function that helps building the combinatorial alphabet with some other relative functions
-"""
+'''
+
 
 class InputAnalyze:
     shortmers_dict: dict #each key is a symbol and the value is 'ACGT' sequence
@@ -19,7 +19,7 @@ class InputAnalyze:
     dict_of_lines: dict #each key is a barcode and the value is the dna input sequence
     num_of_copies: int
     numOfShortmers: int
-    number_of_shortmers_per_symbol : int
+    number_of_shortmers_per_symbol: int
     shortmerSize: int
     number_of_alphabets: int
     code_distance: int
@@ -38,17 +38,17 @@ class InputAnalyze:
         self.code_distance = find_minimum_distance(self.shortmers_dict)
         fm.dump_alphabets(self.alphabet_dict , 'files/alphabets.json')
     def print_input_stats(self):
-        print("--------------------------------Input Statistics----------------------------------")
-        print(f"num of shortmers is : {self.numOfShortmers}")
-        print("shortmer size is : ", self.shortmerSize)
-        print("code distance", self.code_distance)
-        print(f"number of alphabets is : {self.number_of_alphabets} , therfore we need {math.floor(log2(self.number_of_alphabets))} bits")
-        print("--------------------------------Input stats finished----------------------------------------------------")
+        print("--------------------------------------------Input Statistics-------------------------------------------")
+        print(f"Num of Shortmers is : {self.numOfShortmers}")
+        print("Shortmer size is : ", self.shortmerSize)
+        print("Code Hamming Distance", self.code_distance)
+        print(f"Number of Alphabets is : {self.number_of_alphabets} , therefore we need {math.floor(log2(self.number_of_alphabets))} bits")
+        print("-------All input has been collected and analyzed, it's now time to proceed with the simulation---------")
 
 
-
-
-#this function return number,size (pair) of shortmers given a dict
+'''
+this function return number,size (pair) of shortmers given a dict
+'''
 def number_size_of_shortmers_(data_dict):
     return (len(data_dict) , len(data_dict['X1']))
 
@@ -80,20 +80,21 @@ def dna_input(file_path):
     return (list_of_lists, dna_dict)
 
 
+'''
+Calculate the Hamming distance between two sequences.
+'''
 def hamming_distance(seq1, seq2):
-    """Calculate the Hamming distance between two sequences."""
     if len(seq1) != len(seq2):
         raise ValueError("Sequences must be of the same length")
     return sum(c1 != c2 for c1, c2 in zip(seq1, seq2))
 
 
-
+'''
+Find the minimum Hamming distance between any two shortmers in the dictionary.
+'''
 def find_minimum_distance(shortmer_dict):
-    """Find the minimum Hamming distance between any two shortmers in the dictionary."""
     min_distance = float('inf')
-
     keys = list(shortmer_dict.keys())
-
     for i in range(len(keys)):
         for j in range(i + 1, len(keys)):
             key1, key2 = keys[i], keys[j]

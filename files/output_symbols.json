@@ -1,15 +1,23 @@
 {
     "ABC": [
         [
-            "X4",
+            "X2",
             "ACTTCTCCGGAGTGATGAAC",
             "X15",
             "ACGTCC",
-            "X13",
-            "X2"
+            "X10",
+            "X3"
         ],
         [
-            "X4",
+            "X3",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X15",
+            "ACGTCC",
+            "X2",
+            "X8"
+        ],
+        [
+            "X2",
             "ACTTCTCCGGAGTGATGAAC",
             "X4",
             "ACGTCC",
@@ -17,63 +25,47 @@
             "X14"
         ],
         [
-            "X3",
+            "X4",
             "ACTTCTCCGGAGTGATGAAC",
-            "X14",
+            "X15",
             "ACGTCC",
-            "X10",
+            "X13",
             "X14"
         ],
         [
-            "X4",
+            "X5",
             "ACTTCTCCGGAGTGATGAAC",
-            "X4",
+            "X14",
             "ACGTCC",
             "X8",
+            "X2"
+        ],
+        [
+            "X3",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X6",
+            "ACGTCC",
+            "X10",
+            "X3"
+        ],
+        [
+            "X3",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X6",
+            "ACGTCC",
+            "X5",
             "X3"
         ],
         [
             "X4",
             "ACTTCTCCGGAGTGATGAAC",
-            "X4",
+            "X14",
             "ACGTCC",
             "X8",
-            "X9"
+            "X14"
         ],
         [
-            "X2",
-            "ACTTCTCCGGAGTGATGAAC",
-            "X6",
-            "ACGTCC",
-            "X8",
-            "X9"
-        ],
-        [
-            "X5",
-            "ACTTCTCCGGAGTGATGAAC",
-            "X15",
-            "ACGTCC",
-            "X13",
-            "X2"
-        ],
-        [
-            "X2",
-            "ACTTCTCCGGAGTGATGAAC",
-            "X6",
-            "ACGTCC",
-            "X13",
-            "X2"
-        ],
-        [
-            "X3",
-            "ACTTCTCCGGAGTGATGAAC",
-            "X15",
-            "ACGTCC",
-            "X13",
-            "X9"
-        ],
-        [
-            "X5",
+            "X1",
             "ACTTCTCCGGAGTGATGAAC",
             "X14",
             "ACGTCC",
@@ -81,15 +73,143 @@
             "X14"
         ],
         [
+            "X5",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X4",
+            "ACGTCC",
+            "X5",
+            "X3"
+        ],
+        [
             "X2",
             "ACTTCTCCGGAGTGATGAAC",
             "X14",
+            "ACGTCC",
+            "X13",
+            "X8"
+        ],
+        [
+            "X2",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X15",
+            "ACGTCC",
+            "X8",
+            "X14"
+        ],
+        [
+            "X2",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X14",
+            "ACGTCC",
+            "X13",
+            "X3"
+        ],
+        [
+            "X5",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X14",
+            "ACGTCC",
+            "X2",
+            "X8"
+        ],
+        [
+            "X2",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X6",
             "ACGTCC",
             "X8",
             "X2"
         ],
         [
+            "X4",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X10",
+            "ACGTCC",
+            "X2",
+            "X9"
+        ],
+        [
+            "X4",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X14",
+            "ACGTCC",
+            "X13",
+            "X3"
+        ],
+        [
+            "X4",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X14",
+            "ACGTCC",
+            "X10",
+            "X9"
+        ],
+        [
+            "X1",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X10",
+            "ACGTCC",
+            "X2",
+            "X2"
+        ],
+        [
+            "X5",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X10",
+            "ACGTCC",
+            "X8",
+            "X3"
+        ],
+        [
+            "X1",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X10",
+            "ACGTCC",
+            "X2",
+            "X8"
+        ],
+        [
+            "X1",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X14",
+            "ACGTCC",
+            "X2",
+            "X14"
+        ],
+        [
+            "X4",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X10",
+            "ACGTCC",
+            "X2",
+            "X14"
+        ],
+        [
+            "X4",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X4",
+            "ACGTCC",
+            "X8",
+            "X14"
+        ],
+        [
+            "X5",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X6",
+            "ACGTCC",
+            "X5",
+            "X2"
+        ],
+        [
             "X3",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X6",
+            "ACGTCC",
+            "X10",
+            "X14"
+        ],
+        [
+            "X5",
             "ACTTCTCCGGAGTGATGAAC",
             "X10",
             "ACGTCC",
@@ -97,20 +217,236 @@
             "X8"
         ],
         [
+            "X3",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X4",
+            "ACGTCC",
+            "X5",
+            "X3"
+        ],
+        [
             "X4",
             "ACTTCTCCGGAGTGATGAAC",
             "X15",
             "ACGTCC",
-            "X2",
+            "X5",
             "X3"
+        ],
+        [
+            "X4",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X15",
+            "ACGTCC",
+            "X10",
+            "X9"
+        ],
+        [
+            "X2",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X15",
+            "ACGTCC",
+            "X13",
+            "X14"
         ],
         [
             "X5",
             "ACTTCTCCGGAGTGATGAAC",
             "X6",
             "ACGTCC",
+            "X2",
+            "X14"
+        ],
+        [
+            "X1",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X10",
+            "ACGTCC",
             "X13",
+            "X2"
+        ],
+        [
+            "X2",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X10",
+            "ACGTCC",
+            "X8",
+            "X3"
+        ],
+        [
+            "X4",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X14",
+            "ACGTCC",
+            "X5",
+            "X2"
+        ],
+        [
+            "X4",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X15",
+            "ACGTCC",
+            "X5",
             "X8"
+        ],
+        [
+            "X3",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X15",
+            "ACGTCC",
+            "X13",
+            "X2"
+        ],
+        [
+            "X3",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X6",
+            "ACGTCC",
+            "X5",
+            "X2"
+        ],
+        [
+            "X3",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X6",
+            "ACGTCC",
+            "X2",
+            "X2"
+        ],
+        [
+            "X1",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X14",
+            "ACGTCC",
+            "X10",
+            "X8"
+        ],
+        [
+            "X3",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X6",
+            "ACGTCC",
+            "X2",
+            "X9"
+        ],
+        [
+            "X5",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X10",
+            "ACGTCC",
+            "X8",
+            "X14"
+        ],
+        [
+            "X2",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X4",
+            "ACGTCC",
+            "X13",
+            "X14"
+        ],
+        [
+            "X4",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X6",
+            "ACGTCC",
+            "X10",
+            "X8"
+        ],
+        [
+            "X3",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X6",
+            "ACGTCC",
+            "X8",
+            "X2"
+        ],
+        [
+            "X1",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X6",
+            "ACGTCC",
+            "X13",
+            "X9"
+        ],
+        [
+            "X1",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X14",
+            "ACGTCC",
+            "X13",
+            "X3"
+        ],
+        [
+            "X3",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X6",
+            "ACGTCC",
+            "X13",
+            "X2"
+        ],
+        [
+            "X5",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X4",
+            "ACGTCC",
+            "X2",
+            "X2"
+        ],
+        [
+            "X1",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X4",
+            "ACGTCC",
+            "X8",
+            "X8"
+        ],
+        [
+            "X4",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X6",
+            "ACGTCC",
+            "X13",
+            "X3"
+        ],
+        [
+            "X1",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X14",
+            "ACGTCC",
+            "X13",
+            "X3"
+        ],
+        [
+            "X1",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X14",
+            "ACGTCC",
+            "X10",
+            "X8"
+        ],
+        [
+            "X1",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X6",
+            "ACGTCC",
+            "X8",
+            "X8"
+        ],
+        [
+            "X3",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X6",
+            "ACGTCC",
+            "X10",
+            "X8"
+        ],
+        [
+            "X1",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X14",
+            "ACGTCC",
+            "X8",
+            "X14"
         ],
         [
             "X1",
@@ -118,34 +454,42 @@
             "X15",
             "ACGTCC",
             "X2",
-            "X9"
-        ],
-        [
-            "X5",
-            "ACTTCTCCGGAGTGATGAAC",
-            "X10",
-            "ACGTCC",
-            "X13",
             "X8"
-        ],
-        [
-            "X5",
-            "ACTTCTCCGGAGTGATGAAC",
-            "X10",
-            "ACGTCC",
-            "X2",
-            "X2"
         ],
         [
             "X3",
             "ACTTCTCCGGAGTGATGAAC",
             "X10",
             "ACGTCC",
-            "X8",
-            "X3"
+            "X13",
+            "X9"
+        ],
+        [
+            "X2",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X15",
+            "ACGTCC",
+            "X13",
+            "X9"
         ],
         [
             "X4",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X10",
+            "ACGTCC",
+            "X8",
+            "X2"
+        ],
+        [
+            "X2",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X10",
+            "ACGTCC",
+            "X10",
+            "X3"
+        ],
+        [
+            "X1",
             "ACTTCTCCGGAGTGATGAAC",
             "X15",
             "ACGTCC",
@@ -153,141 +497,518 @@
             "X8"
         ],
         [
-            "X5",
+            "X2",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X14",
+            "ACGTCC",
+            "X10",
+            "X9"
+        ],
+        [
+            "X4",
             "ACTTCTCCGGAGTGATGAAC",
             "X10",
             "ACGTCC",
+            "X2",
+            "X2"
+        ],
+        [
+            "X5",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X14",
+            "ACGTCC",
+            "X8",
+            "X14"
+        ],
+        [
+            "X2",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X14",
+            "ACGTCC",
             "X13",
+            "X2"
+        ],
+        [
+            "X5",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X15",
+            "ACGTCC",
+            "X10",
+            "X9"
+        ],
+        [
+            "X3",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X6",
+            "ACGTCC",
+            "X10",
             "X3"
         ],
         [
             "X4",
             "ACTTCTCCGGAGTGATGAAC",
-            "X10",
+            "X6",
             "ACGTCC",
-            "X10",
-            "X14"
+            "X2",
+            "X3"
         ],
         [
-            "X1",
+            "X2",
             "ACTTCTCCGGAGTGATGAAC",
             "X4",
             "ACGTCC",
             "X13",
-            "X14"
+            "X8"
+        ],
+        [
+            "X5",
+            "ACTTCTCCGGAGTGATGAAC",
+            "X10",
+            "ACGTCC",
+            "X8",
+            "X2"
         ]
     ],
     "CGT": [
         [
             "CCAAGCCGGAATGTCTCATA",
-            "X16",
-            "X15",
-            "X11",
-            "X16"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
             "X1",
-            "X13",
-            "X11",
-            "X8"
+            "X10",
+            "X1",
+            "X7"
         ],
         [
             "CCAAGCCGGAATGTCTCATA",
             "X1",
             "X10",
+            "X10",
+            "X14"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X5",
+            "X13",
+            "X14",
+            "X14"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X5",
+            "X11",
+            "X10",
+            "X7"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X16",
+            "X15",
+            "X10",
+            "X8"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X2",
+            "X15",
+            "X14",
+            "X7"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X1",
+            "X10",
+            "X14",
+            "X14"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X4",
+            "X13",
+            "X1",
+            "X8"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X4",
+            "X10",
+            "X1",
+            "X14"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X1",
+            "X11",
+            "X3",
+            "X16"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X1",
+            "X10",
+            "X3",
+            "X5"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X2",
+            "X13",
+            "X3",
+            "X16"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X4",
+            "X11",
             "X14",
             "X7"
         ],
         [
             "CCAAGCCGGAATGTCTCATA",
             "X2",
-            "X11",
-            "X1",
-            "X16"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "X4",
-            "X11",
-            "X14",
-            "X5"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "X1",
-            "X9",
-            "X3",
-            "X5"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "X4",
-            "X10",
-            "X10",
-            "X8"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "X4",
-            "X11",
-            "X10",
-            "X8"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "X5",
-            "X13",
-            "X1",
-            "X8"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "X1",
             "X15",
-            "X11",
-            "X16"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "X16",
-            "X9",
-            "X1",
-            "X5"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "X16",
-            "X11",
-            "X10",
-            "X16"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "X1",
-            "X11",
-            "X1",
-            "X5"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "X1",
-            "X13",
-            "X11",
-            "X16"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "X2",
-            "X10",
             "X14",
             "X7"
         ],
         [
             "CCAAGCCGGAATGTCTCATA",
             "X5",
+            "X13",
+            "X1",
+            "X14"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X16",
+            "X13",
             "X11",
+            "X5"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X5",
+            "X9",
             "X11",
+            "X5"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X1",
+            "X13",
+            "X10",
+            "X14"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X2",
+            "X9",
+            "X3",
+            "X16"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X1",
+            "X13",
+            "X1",
+            "X16"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X1",
+            "X10",
+            "X14",
+            "X5"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X1",
+            "X13",
+            "X3",
+            "X8"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X2",
+            "X15",
+            "X10",
+            "X16"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X5",
+            "X11",
+            "X14",
+            "X14"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X4",
+            "X10",
+            "X3",
+            "X16"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X2",
+            "X10",
+            "X14",
+            "X16"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X4",
+            "X15",
+            "X3",
+            "X8"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X2",
+            "X15",
+            "X10",
+            "X8"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X16",
+            "X15",
+            "X3",
+            "X7"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X16",
+            "X10",
+            "X1",
+            "X16"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X16",
+            "X10",
+            "X11",
+            "X5"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X16",
+            "X9",
+            "X1",
+            "X16"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X4",
+            "X11",
+            "X3",
+            "X14"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X5",
+            "X11",
+            "X10",
+            "X7"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X16",
+            "X10",
+            "X1",
+            "X14"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X1",
+            "X10",
+            "X11",
+            "X14"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X2",
+            "X11",
+            "X1",
+            "X16"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X4",
+            "X11",
+            "X1",
+            "X5"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X1",
+            "X15",
+            "X14",
+            "X7"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X16",
+            "X15",
+            "X14",
+            "X16"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X1",
+            "X13",
+            "X10",
+            "X8"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X2",
+            "X10",
+            "X1",
+            "X7"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X1",
+            "X11",
+            "X1",
+            "X14"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X16",
+            "X10",
+            "X3",
+            "X5"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X16",
+            "X11",
+            "X10",
+            "X16"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X4",
+            "X9",
+            "X11",
+            "X16"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X2",
+            "X15",
+            "X10",
+            "X8"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X1",
+            "X11",
+            "X14",
+            "X5"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X2",
+            "X9",
+            "X1",
+            "X8"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X1",
+            "X13",
+            "X11",
+            "X5"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X1",
+            "X13",
+            "X1",
+            "X14"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X16",
+            "X15",
+            "X10",
+            "X7"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X2",
+            "X9",
+            "X3",
+            "X14"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X5",
+            "X10",
+            "X10",
+            "X5"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X2",
+            "X15",
+            "X1",
+            "X14"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X2",
+            "X9",
+            "X10",
+            "X16"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X2",
+            "X10",
+            "X14",
+            "X14"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X4",
+            "X11",
+            "X10",
+            "X7"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X1",
+            "X11",
+            "X1",
+            "X5"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X4",
+            "X13",
+            "X14",
+            "X5"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X1",
+            "X10",
+            "X1",
+            "X5"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X16",
+            "X15",
+            "X11",
+            "X8"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X5",
+            "X10",
+            "X3",
             "X16"
         ],
         [
@@ -295,45 +1016,255 @@
             "X5",
             "X13",
             "X11",
-            "X8"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "X2",
-            "X15",
-            "X3",
-            "X8"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "X1",
-            "X13",
-            "X14",
-            "X8"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "X1",
-            "X9",
-            "X14",
             "X16"
         ],
         [
             "CCAAGCCGGAATGTCTCATA",
             "X2",
-            "X13",
-            "X10",
+            "X11",
+            "X14",
+            "X5"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X4",
+            "X9",
+            "X11",
             "X8"
         ],
         [
             "CCAAGCCGGAATGTCTCATA",
             "X16",
-            "X11",
-            "X11",
-            "X5"
+            "X15",
+            "X10",
+            "X16"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X4",
+            "X13",
+            "X14",
+            "X14"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X16",
+            "X13",
+            "X1",
+            "X14"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X1",
+            "X10",
+            "X3",
+            "X7"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "X5",
+            "X15",
+            "X10",
+            "X16"
         ]
     ],
     "AAA": [
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
+        [
+            "ACGTCTCATGAGTGATGCAC",
+            "GTCACGTACTGCTGACTCAG"
+        ],
         [
             "ACGTCTCATGAGTGATGCAC",
             "GTCACGTACTGCTGACTCAG"
@@ -425,357 +1356,1141 @@
     ],
     "BBB": [
         [
-            "X4",
-            "X8",
-            "X5",
             "X1",
-            "X1",
+            "X2",
+            "X16",
+            "X10",
+            "X3",
+            "X15",
+            "X3"
+        ],
+        [
+            "X3",
             "X8",
+            "X1",
+            "X16",
+            "X1",
+            "X6",
             "X16"
         ],
         [
-            "X4",
-            "X8",
+            "X2",
             "X1",
-            "X12",
-            "X3",
+            "X15",
+            "X10",
+            "X6",
             "X6",
             "X3"
         ],
         [
-            "X5",
+            "X2",
+            "X1",
+            "X15",
+            "X16",
+            "X8",
             "X6",
+            "X16"
+        ],
+        [
+            "X5",
+            "X2",
+            "X15",
+            "X13",
+            "X8",
+            "X8",
+            "X9"
+        ],
+        [
             "X1",
-            "X1",
+            "X2",
+            "X16",
+            "X16",
+            "X6",
+            "X8",
+            "X3"
+        ],
+        [
+            "X5",
+            "X7",
+            "X15",
+            "X16",
             "X14",
             "X9",
-            "X3"
+            "X10"
+        ],
+        [
+            "X3",
+            "X6",
+            "X5",
+            "X12",
+            "X6",
+            "X6",
+            "X9"
         ],
         [
             "X5",
-            "X8",
-            "X5",
+            "X2",
+            "X1",
+            "X16",
+            "X6",
+            "X15",
+            "X16"
+        ],
+        [
+            "X3",
+            "X7",
+            "X9",
+            "X16",
+            "X14",
+            "X9",
+            "X1"
+        ],
+        [
+            "X4",
+            "X1",
+            "X15",
             "X1",
             "X8",
-            "X15",
+            "X9",
             "X1"
+        ],
+        [
+            "X2",
+            "X2",
+            "X15",
+            "X10",
+            "X6",
+            "X15",
+            "X9"
+        ],
+        [
+            "X3",
+            "X6",
+            "X9",
+            "X12",
+            "X3",
+            "X9",
+            "X16"
+        ],
+        [
+            "X2",
+            "X2",
+            "X16",
+            "X12",
+            "X8",
+            "X15",
+            "X16"
         ],
         [
             "X1",
             "X8",
             "X16",
             "X12",
+            "X3",
+            "X11",
+            "X16"
+        ],
+        [
+            "X1",
             "X6",
+            "X16",
+            "X16",
+            "X1",
+            "X11",
+            "X10"
+        ],
+        [
+            "X5",
+            "X6",
+            "X16",
+            "X10",
+            "X6",
+            "X8",
+            "X1"
+        ],
+        [
+            "X2",
+            "X8",
+            "X1",
+            "X16",
+            "X6",
+            "X8",
+            "X16"
+        ],
+        [
+            "X3",
+            "X1",
+            "X1",
+            "X13",
+            "X6",
+            "X8",
+            "X10"
+        ],
+        [
+            "X4",
+            "X6",
+            "X16",
+            "X16",
+            "X14",
+            "X15",
+            "X9"
+        ],
+        [
+            "X3",
+            "X6",
+            "X16",
+            "X1",
+            "X6",
+            "X11",
+            "X16"
+        ],
+        [
+            "X5",
+            "X8",
+            "X1",
+            "X13",
+            "X3",
+            "X11",
+            "X1"
+        ],
+        [
+            "X1",
+            "X7",
+            "X5",
+            "X10",
+            "X8",
+            "X11",
+            "X16"
+        ],
+        [
+            "X1",
+            "X8",
+            "X16",
+            "X10",
+            "X8",
+            "X8",
+            "X3"
+        ],
+        [
+            "X2",
+            "X8",
+            "X9",
+            "X12",
+            "X6",
+            "X6",
+            "X16"
+        ],
+        [
+            "X5",
+            "X1",
+            "X1",
+            "X16",
+            "X14",
             "X9",
             "X1"
         ],
         [
             "X3",
+            "X7",
+            "X16",
+            "X1",
+            "X1",
+            "X6",
+            "X9"
+        ],
+        [
+            "X1",
+            "X2",
+            "X16",
+            "X10",
+            "X6",
+            "X15",
+            "X3"
+        ],
+        [
+            "X1",
             "X8",
+            "X15",
+            "X16",
+            "X6",
+            "X11",
+            "X9"
+        ],
+        [
+            "X4",
+            "X1",
+            "X1",
+            "X10",
+            "X8",
+            "X6",
+            "X1"
+        ],
+        [
+            "X1",
+            "X8",
+            "X16",
+            "X1",
+            "X8",
+            "X11",
+            "X3"
+        ],
+        [
+            "X4",
+            "X8",
+            "X15",
+            "X10",
+            "X3",
+            "X11",
+            "X3"
+        ],
+        [
+            "X5",
+            "X2",
+            "X15",
+            "X13",
+            "X8",
+            "X8",
+            "X1"
+        ],
+        [
+            "X1",
+            "X1",
             "X5",
             "X10",
+            "X3",
+            "X11",
+            "X16"
+        ],
+        [
             "X1",
+            "X8",
+            "X16",
+            "X16",
+            "X1",
+            "X8",
+            "X3"
+        ],
+        [
+            "X3",
+            "X8",
+            "X9",
+            "X1",
+            "X14",
+            "X8",
+            "X10"
+        ],
+        [
+            "X2",
+            "X7",
+            "X9",
+            "X10",
+            "X14",
             "X15",
             "X9"
         ],
         [
             "X1",
             "X6",
+            "X9",
+            "X1",
+            "X3",
+            "X6",
+            "X10"
+        ],
+        [
+            "X3",
+            "X7",
+            "X16",
+            "X1",
+            "X8",
+            "X8",
+            "X1"
+        ],
+        [
+            "X2",
+            "X2",
+            "X9",
+            "X10",
+            "X1",
             "X15",
+            "X1"
+        ],
+        [
+            "X4",
+            "X6",
+            "X9",
+            "X16",
+            "X1",
+            "X8",
+            "X3"
+        ],
+        [
+            "X1",
+            "X7",
+            "X9",
+            "X10",
+            "X6",
+            "X6",
+            "X1"
+        ],
+        [
+            "X2",
+            "X6",
+            "X5",
             "X12",
+            "X1",
+            "X6",
+            "X10"
+        ],
+        [
+            "X1",
+            "X1",
+            "X15",
+            "X16",
+            "X8",
+            "X6",
+            "X1"
+        ],
+        [
+            "X1",
+            "X1",
+            "X16",
+            "X1",
+            "X3",
+            "X9",
+            "X10"
+        ],
+        [
+            "X1",
+            "X2",
+            "X15",
+            "X1",
+            "X1",
+            "X6",
+            "X3"
+        ],
+        [
+            "X4",
+            "X6",
+            "X5",
+            "X13",
+            "X8",
+            "X15",
+            "X3"
+        ],
+        [
+            "X1",
+            "X1",
+            "X16",
+            "X13",
+            "X1",
+            "X11",
+            "X1"
+        ],
+        [
+            "X3",
+            "X7",
+            "X1",
+            "X13",
+            "X1",
+            "X9",
+            "X1"
+        ],
+        [
+            "X2",
+            "X6",
+            "X15",
+            "X1",
+            "X8",
+            "X11",
+            "X9"
+        ],
+        [
+            "X3",
+            "X1",
+            "X1",
+            "X12",
+            "X6",
+            "X15",
+            "X10"
+        ],
+        [
+            "X1",
+            "X7",
+            "X1",
+            "X10",
+            "X8",
+            "X8",
+            "X10"
+        ],
+        [
+            "X3",
+            "X7",
+            "X16",
+            "X12",
+            "X3",
+            "X11",
+            "X3"
+        ],
+        [
+            "X4",
+            "X2",
+            "X5",
+            "X16",
+            "X8",
+            "X15",
+            "X1"
+        ],
+        [
+            "X3",
+            "X8",
+            "X9",
+            "X1",
+            "X8",
+            "X15",
+            "X3"
+        ],
+        [
+            "X1",
+            "X7",
+            "X9",
+            "X12",
+            "X6",
+            "X9",
+            "X1"
+        ],
+        [
+            "X4",
+            "X8",
+            "X16",
+            "X12",
+            "X3",
+            "X6",
+            "X3"
+        ],
+        [
+            "X2",
+            "X1",
+            "X16",
+            "X1",
+            "X14",
+            "X9",
+            "X1"
+        ],
+        [
+            "X3",
+            "X8",
+            "X16",
+            "X13",
+            "X6",
+            "X9",
+            "X16"
+        ],
+        [
+            "X3",
+            "X8",
+            "X9",
+            "X12",
+            "X8",
+            "X8",
+            "X3"
+        ],
+        [
+            "X5",
+            "X8",
+            "X5",
+            "X10",
             "X14",
             "X11",
+            "X3"
+        ],
+        [
+            "X3",
+            "X6",
+            "X9",
+            "X12",
+            "X1",
+            "X8",
+            "X1"
+        ],
+        [
+            "X2",
+            "X6",
+            "X16",
+            "X13",
+            "X14",
+            "X9",
+            "X9"
+        ],
+        [
+            "X2",
+            "X6",
+            "X1",
+            "X10",
+            "X6",
+            "X8",
+            "X9"
+        ],
+        [
+            "X4",
+            "X7",
+            "X1",
+            "X13",
+            "X1",
+            "X6",
             "X3"
         ],
         [
             "X4",
             "X7",
             "X9",
-            "X16",
             "X1",
-            "X15",
-            "X10"
-        ],
-        [
             "X3",
-            "X8",
-            "X1",
-            "X13",
             "X6",
-            "X8",
             "X9"
         ],
         [
+            "X1",
+            "X2",
             "X5",
-            "X8",
-            "X9",
-            "X12",
+            "X10",
             "X14",
             "X8",
-            "X10"
+            "X1"
         ],
         [
             "X3",
             "X6",
             "X9",
             "X13",
-            "X6",
-            "X9",
-            "X9"
-        ],
-        [
-            "X5",
-            "X6",
-            "X1",
-            "X16",
-            "X1",
-            "X15",
-            "X3"
-        ],
-        [
-            "X3",
             "X8",
-            "X9",
-            "X12",
-            "X6",
-            "X11",
-            "X9"
+            "X15",
+            "X1"
         ],
         [
             "X4",
-            "X2",
-            "X16",
-            "X16",
             "X1",
+            "X16",
+            "X12",
+            "X14",
+            "X15",
+            "X16"
+        ],
+        [
+            "X1",
+            "X8",
+            "X1",
+            "X1",
+            "X8",
             "X11",
-            "X9"
+            "X16"
         ],
         [
             "X4",
-            "X2",
-            "X5",
-            "X16",
-            "X14",
-            "X15",
-            "X10"
-        ],
-        [
-            "X5",
-            "X8",
-            "X1",
-            "X13",
-            "X8",
-            "X8",
-            "X10"
-        ],
-        [
-            "X5",
             "X6",
-            "X1",
             "X16",
-            "X6",
+            "X16",
+            "X1",
             "X11",
-            "X9"
-        ],
-        [
-            "X5",
-            "X6",
-            "X5",
-            "X16",
-            "X1",
-            "X6",
             "X3"
-        ],
-        [
-            "X2",
-            "X6",
-            "X9",
-            "X16",
-            "X14",
-            "X8",
-            "X10"
-        ],
-        [
-            "X1",
-            "X6",
-            "X5",
-            "X16",
-            "X3",
-            "X9",
-            "X10"
-        ],
-        [
-            "X5",
-            "X6",
-            "X15",
-            "X12",
-            "X8",
-            "X6",
-            "X10"
-        ],
-        [
-            "X5",
-            "X8",
-            "X16",
-            "X12",
-            "X1",
-            "X8",
-            "X9"
         ]
     ],
     "CCC": [
         [
             "ACGT",
             "X5",
-            "GTCA",
+            "GTGGAGTGATGAACCA",
             "X1",
             "GTCA"
         ],
         [
             "ACGT",
-            "X3",
-            "GTCA",
-            "X6",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "X5",
-            "GTCA",
-            "X1",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "X3",
-            "GTCA",
+            "X4",
+            "GTGGAGTGATGAACCA",
             "X8",
             "GTCA"
         ],
         [
             "ACGT",
-            "X3",
-            "GTCA",
-            "X2",
-            "GTCA"
-        ],
-        [
-            "ACGT",
             "X5",
-            "GTCA",
-            "X6",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "X5",
-            "GTCA",
-            "X1",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "X5",
-            "GTCA",
+            "GTGGAGTGATGAACCA",
             "X7",
             "GTCA"
         ],
         [
             "ACGT",
-            "X2",
-            "GTCA",
-            "X2",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "X1",
-            "GTCA",
-            "X7",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "X1",
-            "GTCA",
-            "X6",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "X3",
-            "GTCA",
-            "X6",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "X1",
-            "GTCA",
-            "X6",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "X1",
-            "GTCA",
+            "X4",
+            "GTGGAGTGATGAACCA",
             "X8",
             "GTCA"
         ],
         [
             "ACGT",
             "X1",
-            "GTCA",
+            "GTGGAGTGATGAACCA",
             "X8",
             "GTCA"
         ],
         [
             "ACGT",
             "X4",
-            "GTCA",
+            "GTGGAGTGATGAACCA",
             "X8",
             "GTCA"
         ],
         [
             "ACGT",
-            "X5",
-            "GTCA",
+            "X2",
+            "GTGGAGTGATGAACCA",
+            "X7",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X4",
+            "GTGGAGTGATGAACCA",
             "X2",
             "GTCA"
         ],
         [
             "ACGT",
             "X5",
-            "GTCA",
+            "GTGGAGTGATGAACCA",
+            "X1",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X1",
+            "GTGGAGTGATGAACCA",
+            "X2",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X1",
+            "GTGGAGTGATGAACCA",
+            "X8",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X1",
+            "GTGGAGTGATGAACCA",
             "X7",
             "GTCA"
         ],
         [
             "ACGT",
-            "X5",
-            "GTCA",
+            "X2",
+            "GTGGAGTGATGAACCA",
             "X6",
             "GTCA"
         ],
         [
             "ACGT",
             "X3",
-            "GTCA",
+            "GTGGAGTGATGAACCA",
+            "X8",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X3",
+            "GTGGAGTGATGAACCA",
+            "X2",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X3",
+            "GTGGAGTGATGAACCA",
+            "X1",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X5",
+            "GTGGAGTGATGAACCA",
+            "X6",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X1",
+            "GTGGAGTGATGAACCA",
+            "X7",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X5",
+            "GTGGAGTGATGAACCA",
+            "X7",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X3",
+            "GTGGAGTGATGAACCA",
+            "X6",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X3",
+            "GTGGAGTGATGAACCA",
+            "X7",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X1",
+            "GTGGAGTGATGAACCA",
+            "X8",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X5",
+            "GTGGAGTGATGAACCA",
+            "X6",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X1",
+            "GTGGAGTGATGAACCA",
+            "X2",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X4",
+            "GTGGAGTGATGAACCA",
+            "X2",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X5",
+            "GTGGAGTGATGAACCA",
+            "X6",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X4",
+            "GTGGAGTGATGAACCA",
+            "X1",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X5",
+            "GTGGAGTGATGAACCA",
+            "X1",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X4",
+            "GTGGAGTGATGAACCA",
+            "X2",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X3",
+            "GTGGAGTGATGAACCA",
+            "X8",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X5",
+            "GTGGAGTGATGAACCA",
+            "X2",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X1",
+            "GTGGAGTGATGAACCA",
+            "X2",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X5",
+            "GTGGAGTGATGAACCA",
+            "X7",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X5",
+            "GTGGAGTGATGAACCA",
+            "X2",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X4",
+            "GTGGAGTGATGAACCA",
+            "X1",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X3",
+            "GTGGAGTGATGAACCA",
+            "X1",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X4",
+            "GTGGAGTGATGAACCA",
+            "X8",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X4",
+            "GTGGAGTGATGAACCA",
+            "X2",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X5",
+            "GTGGAGTGATGAACCA",
+            "X1",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X1",
+            "GTGGAGTGATGAACCA",
+            "X6",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X3",
+            "GTGGAGTGATGAACCA",
+            "X7",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X5",
+            "GTGGAGTGATGAACCA",
+            "X2",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X5",
+            "GTGGAGTGATGAACCA",
+            "X2",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X1",
+            "GTGGAGTGATGAACCA",
+            "X2",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X2",
+            "GTGGAGTGATGAACCA",
+            "X7",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X5",
+            "GTGGAGTGATGAACCA",
+            "X2",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X1",
+            "GTGGAGTGATGAACCA",
+            "X1",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X4",
+            "GTGGAGTGATGAACCA",
+            "X8",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X2",
+            "GTGGAGTGATGAACCA",
+            "X6",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X4",
+            "GTGGAGTGATGAACCA",
+            "X2",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X3",
+            "GTGGAGTGATGAACCA",
+            "X6",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X4",
+            "GTGGAGTGATGAACCA",
+            "X2",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X4",
+            "GTGGAGTGATGAACCA",
+            "X2",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X5",
+            "GTGGAGTGATGAACCA",
             "X1",
             "GTCA"
         ],
         [
             "ACGT",
             "X2",
-            "GTCA",
+            "GTGGAGTGATGAACCA",
+            "X1",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X2",
+            "GTGGAGTGATGAACCA",
+            "X1",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X2",
+            "GTGGAGTGATGAACCA",
             "X1",
             "GTCA"
         ],
         [
             "ACGT",
             "X1",
-            "GTCA",
+            "GTGGAGTGATGAACCA",
+            "X2",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X3",
+            "GTGGAGTGATGAACCA",
+            "X1",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X3",
+            "GTGGAGTGATGAACCA",
+            "X1",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X1",
+            "GTGGAGTGATGAACCA",
+            "X6",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X5",
+            "GTGGAGTGATGAACCA",
             "X8",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X1",
+            "GTGGAGTGATGAACCA",
+            "X6",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X3",
+            "GTGGAGTGATGAACCA",
+            "X8",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X2",
+            "GTGGAGTGATGAACCA",
+            "X2",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X2",
+            "GTGGAGTGATGAACCA",
+            "X1",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X4",
+            "GTGGAGTGATGAACCA",
+            "X2",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X2",
+            "GTGGAGTGATGAACCA",
+            "X6",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X3",
+            "GTGGAGTGATGAACCA",
+            "X6",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X3",
+            "GTGGAGTGATGAACCA",
+            "X7",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "X3",
+            "GTGGAGTGATGAACCA",
+            "X2",
             "GTCA"
         ]
     ]

@@ -1,11 +1,19 @@
 from collections import defaultdict
+import numpy as np
+
+"""    
+Error Fixing - Final Version
+"""
+
 
 '''
-shortmers is a dictionary
-cluster is a list of strings
+Shortmers is a dictionary
+Cluster is a list of strings
 '''
 
-
+'''
+iterate over each cluster and call fix_main for each one
+'''
 def fix_clusters(error_dict, strand_length_dict, shortmers, num_of_copies, seqma_length):
     result = {}
     for key, cluster in error_dict.items():
@@ -13,12 +21,15 @@ def fix_clusters(error_dict, strand_length_dict, shortmers, num_of_copies, seqma
 
     return result
 
-'''main fixing errors function , it detects what type strand we are scanning ( shortmer or sequence) 
-and calls the relevant fixing function'''
+
+'''
+main fixing errors function , it detects what type strand we are scanning ( shortmer or sequence) 
+and calls the relevant fixing function
+'''
 def fix_main(cluster, shortmers , num_of_copies, strand_length, seqma_length):
     distance_arr = compare_strand_lengths(cluster, strand_length, num_of_copies)
     shortmer_length = len(shortmers['X1'])
-    string_rate = 0.7
+    string_rate = 0.64
     #if we dont use .copy() - shallow copy. they will have the same reference in memory
     fixed_cluster = cluster
 
@@ -87,7 +98,6 @@ def fix_main(cluster, shortmers , num_of_copies, strand_length, seqma_length):
     return fixed_cluster
 
 
-
 def fix_string(fixed_cluster, index_to_fix, num_of_copies, max_key1, max_key2 , distance_arr):
     for i in range(num_of_copies):
 
@@ -153,7 +163,6 @@ def find_dominant_segma(cluster,shortmers,start_index,shortmer_length,num_of_cop
     return segma,NumOfRepeat
 
 
-
 def fix_shortmer(fixed_cluster,shortmers,start_index,shortmer_length,num_of_copies,seqma_length):
     segma,numofRepeat = find_dominant_segma(fixed_cluster,shortmers,start_index,shortmer_length,num_of_copies,seqma_length)
     for i in range(num_of_copies):
@@ -179,7 +188,6 @@ def fix_shortmer(fixed_cluster,shortmers,start_index,shortmer_length,num_of_copi
 
 
     return fixed_cluster
-
 
 
 '''gets src and dest strings , changes the src string according to the errors- subsitution , deletion , insertion . 
@@ -236,7 +244,6 @@ def transform_string(src, des):
     return src
 
 
-
 '''
 top repetitive shortmers in a segma
 returns two sorted lists , keys and values .
@@ -251,9 +258,9 @@ def top_num_values(my_dict, num):
     return keys, values
 
 
-
-#TODO : check if this function is needed
-"""Calculate the Hamming distance between two sequences."""
+"""
+Calculate the Hamming distance between two sequences.
+"""
 def _hamming_distance(seq1, seq2):
     if len(seq1) != len(seq2):
         raise ValueError("Sequences must be of the same length")
@@ -273,11 +280,51 @@ def compare_strand_lengths(cluster, strand_length, num_of_copies):
     return distance_arr
 
 
-# use for testing transform_String function
-#if __name__ == '__main__':
- #   source = "wzwyxxy"
- #   destination = "wzwzxx"
-  #  str = transform_string(source, destination)
-   # print (str)
+
+'''
+ Computes the Levenshtein distance by using dynamic programming to fill out a matrix.
+'''
+def levenshtein_distance(seq1, seq2):
+    # Create a distance matrix
+    len_seq1, len_seq2 = len(seq1), len(seq2)
+    matrix = np.zeros((len_seq1 + 1, len_seq2 + 1))
+
+    # Initialize the matrix
+    for i in range(len_seq1 + 1):
+        matrix[i][0] = i
+    for j in range(len_seq2 + 1):
+        matrix[0][j] = j
+
+    # Fill the matrix
+    for i in range(1, len_seq1 + 1):
+        for j in range(1, len_seq2 + 1):
+            cost = 0 if seq1[i - 1] == seq2[j - 1] else 1
+            matrix[i][j] = min(matrix[i - 1][j] + 1,  # deletion
+                               matrix[i][j - 1] + 1,  # insertion
+                               matrix[i - 1][j - 1] + cost)  # substitution
+
+    return matrix[len_seq1][len_seq2]
 
 
+'''
+Calculates the similarity percentage based on the Levenshtein distance and the length of the sequences.
+'''
+def levenshtein_similarity(seq1, seq2):
+    distance = levenshtein_distance(seq1, seq2)
+    max_len = max(len(seq1), len(seq2))
+    similarity_percentage = (1 - distance / max_len) * 100
+    return similarity_percentage
+
+
+'''
+calculate and return the success rate according to Levenshtein distance
+'''
+def calculate_sucess_rate(final_result, original):
+    sum = 0
+    total_length = 0
+    for key , value in final_result.items():
+        for i in range(len(value)):
+            sum += levenshtein_similarity(final_result[key][i], original[key][i])
+        total_length += len(value)
+
+    return (sum/total_length)

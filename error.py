@@ -1,6 +1,12 @@
 import random
 import math
 import numpy as np
+
+"""    
+error - Final Version
+"""
+
+
 """
 This Function returns a random DNA component that can be used to in the insertion or the substitution error
 """
@@ -10,10 +16,8 @@ def random_char():
 """
 This Function take a domain and a the number of random numbers that we want to generate and returns a list 
 with the number of random numbers that we want to generate, where the size of the list is the number of random numbers
+and the difference between two errors is the shortmers's size
 """
-#def generate_random_numbers(count, start, end):
- #   return [random.randint(start, end) for _ in range(count)]
-
 def generate_random_numbers(count, start, end):
     # Check if the range can accommodate the required count with a minimum distance of 3
     if count > (end - start) // 3 + 1:
@@ -34,9 +38,11 @@ def generate_random_numbers(count, start, end):
             break
 
     return selected_numbers
+
+
 """
-This Function calculates how many error should we add to the original output(list of strings) based on the length of the list which is
-affected by the strand's length and the size of the cluster, and also based on a random error type.
+This Function calculates how many error should we add to the original output(list of strings) based on the length of 
+the list which is affected by the strand's length and the size of the cluster, and also based on a random error type.
 then we implement the errors on the certain cluster and return it
 this function is for planting errors in scale of letters
 """
@@ -143,10 +149,3 @@ def sample_plant_errors_shortmers(shortmers_output, NumOfCopies, error_rate , in
         elif error_type == 'substitute':
             outputWithErrors[strand_index][shortmer_index] = random.choice(list(input_shortmers.keys()))
     return outputWithErrors
-
-
-
-
-
-
-

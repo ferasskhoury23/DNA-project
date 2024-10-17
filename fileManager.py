@@ -1,5 +1,11 @@
 import json
 
+
+"""    
+File Manager - Final Version
+"""
+
+
 '''
 This function reads the json file given a path , and returns it as a dict
 it is used to read the shortmers input and other uses 
