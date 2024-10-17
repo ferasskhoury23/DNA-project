@@ -47,8 +47,9 @@ if __name__ == '__main__':
     fm.dict_to_json(error_dict, "files/output_errors_cluster.json")
 
     '''Fixing the errors on each cluster'''
-    after_fixing = fix_test.fix_clusters(error_dict ,strand_length_dict , Input.shortmers_dict , num_of_copies ,Input.number_of_shortmers_per_symbol)
+    after_fixing,strand_result = fix_test.fix_clusters(error_dict ,strand_length_dict , Input.shortmers_dict , num_of_copies ,Input.number_of_shortmers_per_symbol,Input.alphabet_dict)
     fm.dict_to_json(after_fixing, "files/final_result.json")
+    fm.dict_to_json(strand_result, "files/result_strand.json")
 
 
     '''calculate Final result (Success rate)'''

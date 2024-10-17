@@ -48,3 +48,29 @@ def parameters_from_input():
         raise ValueError("Error Rate Invalid")
 
     return num_of_copies, error_rate
+
+def is_sublist(small, big):
+    """Helper function to check if `small` list is a sublist of `big`."""
+    for i in range(len(big) - len(small) + 1):
+        if big[i:i+len(small)] == small:
+            return True
+    return False
+
+def find_longest_key_with_sublist(target_list, dict_of_lists):
+    longest_match = []
+    longest_key = None
+
+    for key, lst in dict_of_lists.items():
+        # Check if the current list contains the entire target list
+        if is_sublist(target_list, lst):
+            return key  # Return the key immediately if we find a perfect match
+
+        # Find the longest matching sublist
+        for i in range(len(lst)):
+            for j in range(i + 1, len(lst) + 1):
+                sublist = lst[i:j]
+                if len(sublist) > len(longest_match) and is_sublist(sublist, target_list):
+                    longest_match = sublist
+                    longest_key = key
+
+    return longest_key if longest_key else None

@@ -14,22 +14,24 @@ Cluster is a list of strings
 '''
 iterate over each cluster and call fix_main for each one
 '''
-def fix_clusters(error_dict, strand_length_dict, shortmers, num_of_copies, seqma_length):
+def fix_clusters(error_dict, strand_length_dict, shortmers, num_of_copies, seqma_length,alphabets_dict):
     result = {}
+    result_strand = {}
     for key, cluster in error_dict.items():
-        result[key] = fix_main(cluster, shortmers, num_of_copies, strand_length_dict[key], seqma_length)
+        result[key],result_strand[key] = fix_main(cluster, shortmers, num_of_copies, strand_length_dict[key], seqma_length , alphabets_dict)
 
-    return result
+    return result,result_strand
 
 
 '''
 main fixing errors function , it detects what type strand we are scanning ( shortmer or sequence) 
 and calls the relevant fixing function
 '''
-def fix_main(cluster, shortmers , num_of_copies, strand_length, seqma_length):
+def fix_main(cluster, shortmers , num_of_copies, strand_length, seqma_length , alphabets_dict):
+    result_strand = str()
     distance_arr = compare_strand_lengths(cluster, strand_length, num_of_copies)
     shortmer_length = len(shortmers['X1'])
-    string_rate = 0.64
+    string_rate = 0.6
     #if we dont use .copy() - shallow copy. they will have the same reference in memory
     fixed_cluster = cluster
 
@@ -58,11 +60,14 @@ def fix_main(cluster, shortmers , num_of_copies, strand_length, seqma_length):
 
         if (i > (strand_length-shortmer_length)):
             (fixed_cluster, distance_arr) = fix_string(fixed_cluster, i, num_of_copies, max_key1, 'x', distance_arr)
+            result_strand += max_key1
             i+=1
 
 
         elif  ((dict_1[max_key1] > num_of_copies * string_rate) and (dict_2[max_key2] > num_of_copies * string_rate) ):
             (fixed_cluster, distance_arr) = fix_string(fixed_cluster, i, num_of_copies, max_key1, max_key2, distance_arr)
+            result_strand += max_key1
+
             i+=1
 
 
@@ -79,28 +84,49 @@ def fix_main(cluster, shortmers , num_of_copies, strand_length, seqma_length):
             if (sum2 > sum1):
                 #we assume that the first column is a string according to statistics
                 (fixed_cluster, distance_arr) = fix_string(fixed_cluster, i, num_of_copies, max_key1, 'x',distance_arr)
+                result_strand += max_key1
+                result_strand += ','
                 fixed_cluster = fix_shortmer(fixed_cluster, shortmers, i+1, shortmer_length, num_of_copies, seqma_length)
+                result_strand += calculate_segma(segma2, shortmers , alphabets_dict)
+                result_strand += ','
+
 
                 i += shortmer_length
                 i+= 1
             else:
+                if result_strand and (not result_strand.endswith(',')):
+                    result_strand += ','
+
                 fixed_cluster = fix_shortmer(fixed_cluster, shortmers, i, shortmer_length, num_of_copies, seqma_length)
+                (segma1, numOfRep1) = find_dominant_segma(cluster, shortmers, i, shortmer_length, num_of_copies,
+                                                          seqma_length)
+                result_strand += calculate_segma(segma1, shortmers , alphabets_dict)
+                result_strand += ','
+
                 i += shortmer_length
             #TODO : add a boolean from fix_shortmer that is true when there is nothing to fix , then we increment (i) the window manually
 
         else:
+            if  result_strand and (not result_strand.endswith(',')):
+                result_strand += ','
+
             fixed_cluster = fix_shortmer(fixed_cluster, shortmers, i, shortmer_length, num_of_copies, seqma_length)
+            (segma1, numOfRep1) = find_dominant_segma(cluster, shortmers, i, shortmer_length, num_of_copies,
+                                                      seqma_length)
+
+            result_strand += calculate_segma(segma1, shortmers, alphabets_dict)
+            result_strand += ','
+
             i += shortmer_length
 
             #TODO : check if dic(max key) == numOfCopies , because then there is nothing to fix
             # we know that the first column- dict_1(from the two) is part of a string
 
-    return fixed_cluster
+    return fixed_cluster, result_strand
 
 
 def fix_string(fixed_cluster, index_to_fix, num_of_copies, max_key1, max_key2 , distance_arr):
     for i in range(num_of_copies):
-
         if (len (fixed_cluster[i]) > index_to_fix) and  fixed_cluster[i][index_to_fix] == max_key1:
             continue
         else:
@@ -152,7 +178,7 @@ def fix_string(fixed_cluster, index_to_fix, num_of_copies, max_key1, max_key2 , 
 def find_dominant_segma(cluster,shortmers,start_index,shortmer_length,num_of_copies,seqma_length):
     dict_of_shortmers_in_segma = defaultdict(int)
     # Reversed dictionary
-    strings_to_shortmers = {v: k for k, v in shortmers.items()}  # reversed dict
+    strings_to_shortmers = {v: k for k, v in shortmers.items()}  # reversed dict   CCG : X5
 
     for i in range(num_of_copies):
         tmp = cluster[i][start_index: (start_index + shortmer_length)]
@@ -162,6 +188,22 @@ def find_dominant_segma(cluster,shortmers,start_index,shortmer_length,num_of_cop
     segma,NumOfRepeat = top_num_values(dict_of_shortmers_in_segma, seqma_length)
     return segma,NumOfRepeat
 
+
+def compare_lists(list1, list2):
+    if( (set(list1) == set(list2)) or ( (len(list1) < len(list2)) and (list1 in list2) ) ):
+        return True
+    return False
+
+def calculate_segma(string_segma_list, shortmers_dict , alphabets_dict):
+    shortmersX_list =[]
+    strings_to_shortmers = {v: k for k, v in shortmers_dict.items()}  # reversed dict   CCG : X5
+    #convert the segma string list to segma list with X's
+    for string in string_segma_list:
+        shortmersX_list.append(strings_to_shortmers[string])
+    for segma,segma_list in alphabets_dict.items():
+        if (compare_lists(shortmersX_list, segma_list)):
+            return segma
+    return 'ZINVALID'
 
 def fix_shortmer(fixed_cluster,shortmers,start_index,shortmer_length,num_of_copies,seqma_length):
     segma,numofRepeat = find_dominant_segma(fixed_cluster,shortmers,start_index,shortmer_length,num_of_copies,seqma_length)
