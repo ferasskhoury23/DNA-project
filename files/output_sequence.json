@@ -1,92 +1,60 @@
 {
     "ABC": [
         [
-            "CCG",
+            "AGC",
             "ACTTCTCCGGAGTGATGAAC",
-            "CCG",
+            "GGA",
             "ACGTCC",
-            "TCT",
+            "CGT",
             "CGT"
         ],
         [
-            "GCC",
-            "ACTTCTCCGGAGTGATGAAC",
-            "GAG",
-            "ACGTCC",
             "CAC",
-            "CGT"
-        ],
-        [
-            "CCG",
             "ACTTCTCCGGAGTGATGAAC",
-            "CCG",
+            "GGA",
             "ACGTCC",
             "CAC",
             "CAC"
         ],
         [
-            "CAC",
+            "CCG",
+            "ACTTCTCCGGAGTGATGAAC",
+            "CCG",
+            "ACGTCC",
+            "GAG",
+            "CGT"
+        ],
+        [
+            "ATG",
+            "ACTTCTCCGGAGTGATGAAC",
+            "CTA",
+            "ACGTCC",
+            "GAG",
+            "AAT"
+        ],
+        [
+            "AGC",
             "ACTTCTCCGGAGTGATGAAC",
             "GAG",
             "ACGTCC",
             "AGC",
-            "CAC"
+            "ATG"
         ],
         [
-            "CCG",
+            "CAC",
             "ACTTCTCCGGAGTGATGAAC",
             "GGA",
             "ACGTCC",
-            "GAG",
-            "CAC"
-        ],
-        [
-            "GCC",
-            "ACTTCTCCGGAGTGATGAAC",
-            "GGA",
-            "ACGTCC",
-            "GAG",
-            "CGT"
+            "CAC",
+            "ATG"
         ],
         [
             "CCG",
             "ACTTCTCCGGAGTGATGAAC",
             "CTA",
             "ACGTCC",
-            "AGC",
-            "AAT"
-        ],
-        [
-            "GCC",
-            "ACTTCTCCGGAGTGATGAAC",
-            "GGA",
-            "ACGTCC",
-            "GAG",
-            "AAT"
-        ],
-        [
-            "AGC",
-            "ACTTCTCCGGAGTGATGAAC",
-            "GAG",
-            "ACGTCC",
-            "TCT",
-            "CAC"
-        ],
-        [
             "CAC",
-            "ACTTCTCCGGAGTGATGAAC",
-            "CCG",
-            "ACGTCC",
-            "GAG",
-            "CGT"
-        ],
-        [
-            "CAC",
-            "ACTTCTCCGGAGTGATGAAC",
-            "AAT",
-            "ACGTCC",
-            "CAC",
-            "CAC"
+            "TAA"
         ],
         [
             "ATG",
@@ -97,159 +65,15 @@
             "CGT"
         ],
         [
-            "CCG",
-            "ACTTCTCCGGAGTGATGAAC",
-            "GGA",
-            "ACGTCC",
-            "CAC",
-            "ATG"
-        ],
-        [
-            "CCG",
+            "GCC",
             "ACTTCTCCGGAGTGATGAAC",
             "AAT",
             "ACGTCC",
-            "CGT",
+            "CAC",
             "AAT"
         ],
         [
-            "AGC",
-            "ACTTCTCCGGAGTGATGAAC",
             "CCG",
-            "ACGTCC",
-            "CGT",
-            "TAA"
-        ],
-        [
-            "GCC",
-            "ACTTCTCCGGAGTGATGAAC",
-            "AAT",
-            "ACGTCC",
-            "TCT",
-            "AAT"
-        ],
-        [
-            "CAC",
-            "ACTTCTCCGGAGTGATGAAC",
-            "GGA",
-            "ACGTCC",
-            "CGT",
-            "ATG"
-        ],
-        [
-            "CAC",
-            "ACTTCTCCGGAGTGATGAAC",
-            "CCG",
-            "ACGTCC",
-            "CAC",
-            "TAA"
-        ],
-        [
-            "CCG",
-            "ACTTCTCCGGAGTGATGAAC",
-            "GAG",
-            "ACGTCC",
-            "TCT",
-            "TAA"
-        ],
-        [
-            "GCC",
-            "ACTTCTCCGGAGTGATGAAC",
-            "CCG",
-            "ACGTCC",
-            "CGT",
-            "CAC"
-        ],
-        [
-            "ATG",
-            "ACTTCTCCGGAGTGATGAAC",
-            "AAT",
-            "ACGTCC",
-            "AGC",
-            "CGT"
-        ],
-        [
-            "ATG",
-            "ACTTCTCCGGAGTGATGAAC",
-            "GGA",
-            "ACGTCC",
-            "CGT",
-            "CAC"
-        ],
-        [
-            "ATG",
-            "ACTTCTCCGGAGTGATGAAC",
-            "AAT",
-            "ACGTCC",
-            "AGC",
-            "AAT"
-        ],
-        [
-            "CAC",
-            "ACTTCTCCGGAGTGATGAAC",
-            "AAT",
-            "ACGTCC",
-            "TCT",
-            "TAA"
-        ],
-        [
-            "ATG",
-            "ACTTCTCCGGAGTGATGAAC",
-            "AAT",
-            "ACGTCC",
-            "AGC",
-            "CAC"
-        ],
-        [
-            "CCG",
-            "ACTTCTCCGGAGTGATGAAC",
-            "AAT",
-            "ACGTCC",
-            "CAC",
-            "CGT"
-        ],
-        [
-            "CCG",
-            "ACTTCTCCGGAGTGATGAAC",
-            "GAG",
-            "ACGTCC",
-            "AGC",
-            "ATG"
-        ],
-        [
-            "GCC",
-            "ACTTCTCCGGAGTGATGAAC",
-            "GGA",
-            "ACGTCC",
-            "AGC",
-            "ATG"
-        ],
-        [
-            "CAC",
-            "ACTTCTCCGGAGTGATGAAC",
-            "AAT",
-            "ACGTCC",
-            "GAG",
-            "CAC"
-        ],
-        [
-            "AGC",
-            "ACTTCTCCGGAGTGATGAAC",
-            "CCG",
-            "ACGTCC",
-            "AGC",
-            "CAC"
-        ],
-        [
-            "AGC",
-            "ACTTCTCCGGAGTGATGAAC",
-            "GAG",
-            "ACGTCC",
-            "GAG",
-            "ATG"
-        ],
-        [
-            "GCC",
             "ACTTCTCCGGAGTGATGAAC",
             "CTA",
             "ACGTCC",
@@ -257,71 +81,7 @@
             "CGT"
         ],
         [
-            "ATG",
-            "ACTTCTCCGGAGTGATGAAC",
-            "CTA",
-            "ACGTCC",
-            "CGT",
-            "ATG"
-        ],
-        [
-            "ATG",
-            "ACTTCTCCGGAGTGATGAAC",
-            "CCG",
-            "ACGTCC",
-            "CGT",
-            "TAA"
-        ],
-        [
-            "CAC",
-            "ACTTCTCCGGAGTGATGAAC",
-            "GGA",
-            "ACGTCC",
-            "CGT",
-            "AAT"
-        ],
-        [
-            "ATG",
-            "ACTTCTCCGGAGTGATGAAC",
-            "GGA",
-            "ACGTCC",
             "AGC",
-            "ATG"
-        ],
-        [
-            "AGC",
-            "ACTTCTCCGGAGTGATGAAC",
-            "GAG",
-            "ACGTCC",
-            "AGC",
-            "ATG"
-        ],
-        [
-            "CAC",
-            "ACTTCTCCGGAGTGATGAAC",
-            "CCG",
-            "ACGTCC",
-            "TCT",
-            "AAT"
-        ],
-        [
-            "CAC",
-            "ACTTCTCCGGAGTGATGAAC",
-            "GAG",
-            "ACGTCC",
-            "AGC",
-            "AAT"
-        ],
-        [
-            "GCC",
-            "ACTTCTCCGGAGTGATGAAC",
-            "AAT",
-            "ACGTCC",
-            "TCT",
-            "CAC"
-        ],
-        [
-            "GCC",
             "ACTTCTCCGGAGTGATGAAC",
             "GGA",
             "ACGTCC",
@@ -329,25 +89,129 @@
             "CGT"
         ],
         [
-            "AGC",
+            "CCG",
             "ACTTCTCCGGAGTGATGAAC",
-            "GAG",
+            "AAT",
             "ACGTCC",
             "AGC",
+            "ATG"
+        ],
+        [
+            "AGC",
+            "ACTTCTCCGGAGTGATGAAC",
+            "CCG",
+            "ACGTCC",
+            "TCT",
             "CGT"
         ],
         [
-            "CCG",
+            "CAC",
             "ACTTCTCCGGAGTGATGAAC",
-            "CTA",
+            "CCG",
             "ACGTCC",
             "CAC",
+            "ATG"
+        ],
+        [
+            "CAC",
+            "ACTTCTCCGGAGTGATGAAC",
+            "GGA",
+            "ACGTCC",
+            "TCT",
+            "CGT"
+        ],
+        [
+            "GCC",
+            "ACTTCTCCGGAGTGATGAAC",
+            "AAT",
+            "ACGTCC",
+            "GAG",
             "AAT"
+        ],
+        [
+            "GCC",
+            "ACTTCTCCGGAGTGATGAAC",
+            "CCG",
+            "ACGTCC",
+            "CAC",
+            "TAA"
+        ],
+        [
+            "ATG",
+            "ACTTCTCCGGAGTGATGAAC",
+            "CCG",
+            "ACGTCC",
+            "CAC",
+            "ATG"
+        ],
+        [
+            "GCC",
+            "ACTTCTCCGGAGTGATGAAC",
+            "GGA",
+            "ACGTCC",
+            "GAG",
+            "CAC"
+        ],
+        [
+            "ATG",
+            "ACTTCTCCGGAGTGATGAAC",
+            "GAG",
+            "ACGTCC",
+            "AGC",
+            "ATG"
         ],
         [
             "AGC",
             "ACTTCTCCGGAGTGATGAAC",
+            "GGA",
+            "ACGTCC",
+            "TCT",
+            "AAT"
+        ],
+        [
+            "GCC",
+            "ACTTCTCCGGAGTGATGAAC",
+            "CTA",
+            "ACGTCC",
             "GAG",
+            "ATG"
+        ],
+        [
+            "ATG",
+            "ACTTCTCCGGAGTGATGAAC",
+            "CTA",
+            "ACGTCC",
+            "AGC",
+            "CAC"
+        ],
+        [
+            "CAC",
+            "ACTTCTCCGGAGTGATGAAC",
+            "GGA",
+            "ACGTCC",
+            "AGC",
+            "AAT"
+        ],
+        [
+            "ATG",
+            "ACTTCTCCGGAGTGATGAAC",
+            "GAG",
+            "ACGTCC",
+            "TCT",
+            "CAC"
+        ],
+        [
+            "GCC",
+            "ACTTCTCCGGAGTGATGAAC",
+            "AAT",
+            "ACGTCC",
+            "AGC",
+            "AAT"
+        ],
+        [
+            "CAC",
+            "ACTTCTCCGGAGTGATGAAC",
+            "CCG",
             "ACGTCC",
             "CGT",
             "CAC"
@@ -355,15 +219,119 @@
         [
             "GCC",
             "ACTTCTCCGGAGTGATGAAC",
+            "CTA",
+            "ACGTCC",
+            "CGT",
+            "TAA"
+        ],
+        [
             "CCG",
+            "ACTTCTCCGGAGTGATGAAC",
+            "CTA",
+            "ACGTCC",
+            "TCT",
+            "CAC"
+        ],
+        [
+            "AGC",
+            "ACTTCTCCGGAGTGATGAAC",
+            "AAT",
+            "ACGTCC",
+            "CAC",
+            "CGT"
+        ],
+        [
+            "GCC",
+            "ACTTCTCCGGAGTGATGAAC",
+            "AAT",
+            "ACGTCC",
+            "CGT",
+            "CGT"
+        ],
+        [
+            "CAC",
+            "ACTTCTCCGGAGTGATGAAC",
+            "GGA",
+            "ACGTCC",
+            "TCT",
+            "CGT"
+        ],
+        [
+            "CAC",
+            "ACTTCTCCGGAGTGATGAAC",
+            "AAT",
             "ACGTCC",
             "GAG",
             "ATG"
         ],
         [
+            "CAC",
+            "ACTTCTCCGGAGTGATGAAC",
+            "CCG",
+            "ACGTCC",
+            "AGC",
+            "AAT"
+        ],
+        [
             "CCG",
             "ACTTCTCCGGAGTGATGAAC",
             "CCG",
+            "ACGTCC",
+            "CAC",
+            "ATG"
+        ],
+        [
+            "ATG",
+            "ACTTCTCCGGAGTGATGAAC",
+            "CTA",
+            "ACGTCC",
+            "CAC",
+            "TAA"
+        ],
+        [
+            "CAC",
+            "ACTTCTCCGGAGTGATGAAC",
+            "GGA",
+            "ACGTCC",
+            "TCT",
+            "CAC"
+        ],
+        [
+            "CCG",
+            "ACTTCTCCGGAGTGATGAAC",
+            "AAT",
+            "ACGTCC",
+            "CGT",
+            "ATG"
+        ],
+        [
+            "GCC",
+            "ACTTCTCCGGAGTGATGAAC",
+            "AAT",
+            "ACGTCC",
+            "GAG",
+            "ATG"
+        ],
+        [
+            "AGC",
+            "ACTTCTCCGGAGTGATGAAC",
+            "AAT",
+            "ACGTCC",
+            "AGC",
+            "ATG"
+        ],
+        [
+            "CAC",
+            "ACTTCTCCGGAGTGATGAAC",
+            "AAT",
+            "ACGTCC",
+            "CAC",
+            "CGT"
+        ],
+        [
+            "ATG",
+            "ACTTCTCCGGAGTGATGAAC",
+            "GAG",
             "ACGTCC",
             "CAC",
             "TAA"
@@ -373,19 +341,27 @@
             "ACTTCTCCGGAGTGATGAAC",
             "AAT",
             "ACGTCC",
-            "AGC",
-            "TAA"
+            "CGT",
+            "ATG"
         ],
         [
             "GCC",
             "ACTTCTCCGGAGTGATGAAC",
             "CTA",
             "ACGTCC",
+            "CAC",
+            "TAA"
+        ],
+        [
             "AGC",
+            "ACTTCTCCGGAGTGATGAAC",
+            "CTA",
+            "ACGTCC",
+            "GAG",
             "CAC"
         ],
         [
-            "CCG",
+            "ATG",
             "ACTTCTCCGGAGTGATGAAC",
             "CCG",
             "ACGTCC",
@@ -398,259 +374,105 @@
             "CTA",
             "ACGTCC",
             "TCT",
-            "TAA"
+            "ATG"
         ]
     ],
     "CGT": [
         [
             "CCAAGCCGGAATGTCTCATA",
-            "CCG",
-            "GGA",
-            "AAT",
+            "GCC",
+            "GAG",
+            "GCC",
             "AAT"
         ],
         [
             "CCAAGCCGGAATGTCTCATA",
             "GCC",
-            "TGG",
+            "GGA",
             "GAG",
             "CGT"
         ],
         [
             "CCAAGCCGGAATGTCTCATA",
-            "TTC",
+            "GCC",
+            "TCT",
+            "ATG",
+            "AAT"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "CAC",
+            "GGA",
+            "TGG",
+            "CGT"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "CAC",
+            "TGG",
+            "TGG",
+            "CGT"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "AGC",
+            "TGG",
+            "ATG",
+            "AAT"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "AGC",
+            "GAG",
+            "ATG",
+            "GTT"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "CCG",
+            "TCT",
+            "GCC",
+            "GTT"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "CAC",
+            "GGA",
+            "GAG",
+            "AGC"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "CAC",
+            "TGG",
+            "GAG",
+            "AGC"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "CCG",
+            "GAG",
+            "AAT",
+            "AGC"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "GCC",
+            "TCT",
+            "GCC",
+            "AAT"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "CAC",
+            "TGG",
+            "TGG",
+            "AGC"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "CCG",
             "TAA",
-            "ATG",
-            "CGT"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "AGC",
-            "TGG",
-            "ATG",
-            "TTC"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "CCG",
-            "GGA",
-            "ATG",
-            "AAT"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "GCC",
-            "GGA",
-            "TGG",
-            "AGC"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "CCG",
-            "TGG",
-            "AAT",
-            "CGT"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "AGC",
-            "TCT",
-            "AAT",
-            "GTT"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "CAC",
-            "TCT",
-            "AAT",
-            "CGT"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "AGC",
-            "TGG",
-            "ATG",
-            "AAT"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "CAC",
-            "TCT",
-            "TGG",
-            "GTT"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "GCC",
-            "GGA",
-            "TGG",
-            "AAT"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "TTC",
-            "GAG",
-            "AAT",
-            "AGC"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "GCC",
-            "GGA",
-            "ATG",
-            "AAT"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "AGC",
-            "GGA",
-            "GCC",
-            "AAT"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "CCG",
-            "GAG",
-            "GCC",
-            "AGC"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "AGC",
-            "TGG",
-            "GAG",
-            "CGT"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "GCC",
-            "TCT",
-            "TGG",
-            "AGC"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "GCC",
-            "TCT",
-            "GAG",
-            "AGC"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "CCG",
-            "TCT",
-            "AAT",
-            "AGC"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "TTC",
-            "GAG",
-            "AAT",
-            "AAT"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "CAC",
-            "GAG",
-            "ATG",
-            "CGT"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "CCG",
-            "TCT",
-            "TGG",
-            "AGC"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "CCG",
-            "TGG",
-            "TGG",
-            "AAT"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "CCG",
-            "TCT",
-            "AAT",
-            "TTC"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "AGC",
-            "GGA",
-            "TGG",
-            "CGT"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "AGC",
-            "TCT",
-            "TGG",
-            "AGC"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "GCC",
-            "GAG",
-            "GAG",
-            "TTC"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "TTC",
-            "TGG",
-            "AAT",
-            "GTT"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "CCG",
-            "GAG",
-            "TGG",
-            "CGT"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "AGC",
-            "TGG",
-            "ATG",
-            "CGT"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "TTC",
-            "TGG",
-            "GAG",
-            "CGT"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "CCG",
-            "TCT",
-            "ATG",
-            "TTC"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "CAC",
-            "GGA",
-            "GAG",
-            "GTT"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "GCC",
-            "TCT",
-            "TGG",
-            "GTT"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "CCG",
-            "TGG",
             "GCC",
             "AAT"
         ],
@@ -658,27 +480,160 @@
             "CCAAGCCGGAATGTCTCATA",
             "GCC",
             "TAA",
-            "TGG",
+            "GAG",
+            "GTT"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "TTC",
+            "GGA",
+            "GCC",
             "AAT"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "GCC",
+            "TGG",
+            "AAT",
+            "CGT"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "CCG",
+            "TAA",
+            "AAT",
+            "CGT"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "CCG",
+            "GAG",
+            "GAG",
+            "TTC"
         ],
         [
             "CCAAGCCGGAATGTCTCATA",
             "CAC",
             "GGA",
+            "ATG",
+            "TTC"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "GCC",
+            "GAG",
             "AAT",
+            "GTT"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "GCC",
+            "TCT",
+            "GCC",
             "AGC"
         ],
         [
             "CCAAGCCGGAATGTCTCATA",
             "TTC",
-            "GAG",
-            "ATG",
+            "GGA",
+            "GCC",
             "AGC"
         ],
         [
             "CCAAGCCGGAATGTCTCATA",
+            "GCC",
+            "TGG",
+            "ATG",
+            "CGT"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "CCG",
+            "TAA",
+            "GCC",
+            "AAT"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
             "CAC",
+            "GAG",
+            "GAG",
+            "CGT"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "AGC",
+            "TGG",
+            "GAG",
+            "CGT"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "AGC",
+            "TCT",
+            "AAT",
+            "AAT"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "CAC",
+            "TAA",
+            "GAG",
+            "TTC"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "TTC",
+            "TGG",
+            "AAT",
+            "TTC"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "CCG",
+            "TCT",
+            "ATG",
+            "AAT"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "AGC",
             "GGA",
+            "GCC",
+            "GTT"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "CCG",
+            "GGA",
+            "AAT",
+            "AAT"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "AGC",
+            "TGG",
+            "GCC",
+            "AGC"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "TTC",
+            "GGA",
+            "GAG",
+            "CGT"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "CCG",
+            "GGA",
+            "GAG",
+            "AGC"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "TTC",
+            "TAA",
             "GCC",
             "GTT"
         ],
@@ -687,85 +642,73 @@
             "GCC",
             "TAA",
             "TGG",
-            "GTT"
+            "AGC"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "CCG",
+            "TGG",
+            "TGG",
+            "TTC"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "TTC",
+            "GAG",
+            "GCC",
+            "AAT"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "TTC",
+            "TGG",
+            "ATG",
+            "AAT"
         ],
         [
             "CCAAGCCGGAATGTCTCATA",
             "CAC",
-            "GGA",
+            "TCT",
             "ATG",
-            "CGT"
+            "AGC"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "CCG",
+            "TAA",
+            "GAG",
+            "GTT"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "TTC",
+            "TCT",
+            "TGG",
+            "GTT"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "AGC",
+            "GGA",
+            "GAG",
+            "AAT"
+        ],
+        [
+            "CCAAGCCGGAATGTCTCATA",
+            "TTC",
+            "TCT",
+            "GAG",
+            "GTT"
         ],
         [
             "CCAAGCCGGAATGTCTCATA",
             "GCC",
             "GAG",
-            "AAT",
-            "TTC"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "TTC",
-            "TCT",
-            "GAG",
-            "AAT"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "AGC",
-            "TGG",
-            "TGG",
-            "GTT"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "CCG",
-            "TAA",
             "ATG",
             "AAT"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "CAC",
-            "TCT",
-            "GAG",
-            "AGC"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "AGC",
-            "TAA",
-            "AAT",
-            "TTC"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "TTC",
-            "TCT",
-            "AAT",
-            "CGT"
-        ],
-        [
-            "CCAAGCCGGAATGTCTCATA",
-            "CCG",
-            "GAG",
-            "GAG",
-            "TTC"
         ]
     ],
     "AAA": [
-        [
-            "ACGTCTCATGAGTGATGCAC",
-            "GTCACGTACTGCTGACTCAG"
-        ],
-        [
-            "ACGTCTCATGAGTGATGCAC",
-            "GTCACGTACTGCTGACTCAG"
-        ],
-        [
-            "ACGTCTCATGAGTGATGCAC",
-            "GTCACGTACTGCTGACTCAG"
-        ],
         [
             "ACGTCTCATGAGTGATGCAC",
             "GTCACGTACTGCTGACTCAG"
@@ -959,325 +902,127 @@
         [
             "ATG",
             "CGT",
-            "TTC",
+            "TAA",
             "GAG",
-            "AAT",
+            "GCC",
             "CGT",
-            "TAA"
+            "GAG"
         ],
         [
             "CAC",
             "CGT",
             "TTC",
-            "GCC",
-            "ATG",
+            "GAG",
             "CTA",
-            "GCC"
-        ],
-        [
-            "ATG",
-            "GTT",
-            "TAA",
-            "TCT",
-            "ATG",
-            "TGG",
+            "GGA",
             "TAA"
         ],
         [
-            "GCC",
+            "ATG",
             "CTA",
-            "TAA",
-            "GCC",
-            "GCC",
-            "TAA",
+            "AGC",
+            "TCT",
+            "ATG",
+            "CGT",
             "ATG"
         ],
         [
-            "ATG",
+            "AGC",
+            "CGT",
+            "GCC",
+            "TTC",
             "CGT",
             "TAA",
-            "GAG",
-            "CGT",
-            "CTA",
             "GAG"
         ],
         [
-            "CCG",
-            "GTT",
-            "GGA",
+            "GCC",
+            "CTA",
+            "TTC",
             "ACA",
-            "AAT",
-            "CTA",
-            "TAA"
-        ],
-        [
-            "AGC",
             "GCC",
-            "GGA",
-            "TCT",
-            "AAT",
-            "TAA",
-            "ATG"
-        ],
-        [
-            "AGC",
-            "CTA",
-            "GGA",
-            "GAG",
-            "AAT",
-            "CGT",
-            "TAA"
-        ],
-        [
-            "ATG",
-            "GCC",
-            "TTC",
-            "TTC",
-            "AAT",
-            "TAA",
-            "ATG"
-        ],
-        [
-            "GCC",
-            "CTA",
-            "GGA",
-            "GCC",
-            "CTA",
-            "GGA",
+            "TGG",
             "TTC"
         ],
         [
-            "CCG",
+            "ATG",
             "GTT",
-            "TAA",
+            "GCC",
             "ACA",
             "ATG",
-            "CGT",
-            "GCC"
-        ],
-        [
-            "CCG",
-            "CGT",
-            "GGA",
-            "TTC",
-            "CTA",
-            "CGT",
-            "ATG"
-        ],
-        [
-            "CAC",
-            "CAC",
-            "GGA",
-            "TCT",
-            "ATG",
             "TGG",
-            "GAG"
-        ],
-        [
-            "GCC",
-            "CGT",
-            "AGC",
-            "TCT",
-            "ATG",
-            "TGG",
-            "GAG"
-        ],
-        [
-            "GCC",
-            "GCC",
-            "GGA",
-            "TTC",
-            "CTA",
-            "CGT",
             "TAA"
         ],
         [
-            "ATG",
+            "CAC",
+            "CGT",
+            "AGC",
+            "TTC",
+            "AAT",
+            "CTA",
+            "ATG"
+        ],
+        [
+            "AGC",
             "GTT",
-            "GCC",
-            "TCT",
-            "CTA",
-            "CGT",
-            "ATG"
-        ],
-        [
-            "CAC",
-            "CAC",
             "TAA",
-            "TCT",
+            "GCC",
             "CGT",
-            "TGG",
-            "GAG"
+            "TAA",
+            "TTC"
         ],
         [
             "ATG",
-            "GCC",
-            "GCC",
-            "TCT",
-            "ATG",
-            "TGG",
-            "ATG"
-        ],
-        [
-            "GCC",
-            "CGT",
-            "TAA",
-            "TTC",
-            "GCC",
             "CTA",
-            "GAG"
-        ],
-        [
-            "CAC",
-            "GCC",
-            "TAA",
-            "TTC",
-            "CTA",
-            "TGG",
-            "GCC"
-        ],
-        [
-            "GCC",
-            "CGT",
             "GGA",
-            "TCT",
-            "AAT",
-            "TGG",
-            "TTC"
-        ],
-        [
-            "GCC",
-            "GCC",
-            "TTC",
-            "TTC",
-            "CGT",
-            "CTA",
-            "TTC"
-        ],
-        [
-            "GCC",
-            "CGT",
-            "TTC",
             "GAG",
-            "AAT",
+            "ATG",
             "CTA",
-            "ATG"
+            "GCC"
         ],
         [
             "CCG",
-            "CGT",
+            "CTA",
+            "TTC",
+            "TTC",
+            "AAT",
+            "GGA",
+            "TTC"
+        ],
+        [
+            "AGC",
             "GCC",
+            "TAA",
             "TCT",
-            "AAT",
             "CGT",
-            "TTC"
-        ],
-        [
-            "AGC",
-            "CTA",
-            "GGA",
-            "TTC",
-            "AAT",
-            "TAA",
-            "TTC"
-        ],
-        [
-            "AGC",
-            "CTA",
-            "TTC",
-            "TTC",
-            "ATG",
-            "GGA",
-            "ATG"
-        ],
-        [
-            "GCC",
-            "GCC",
-            "GGA",
-            "TTC",
-            "ATG",
             "CGT",
-            "ATG"
-        ],
-        [
-            "AGC",
-            "CAC",
-            "TAA",
-            "TTC",
-            "CGT",
-            "TAA",
             "GCC"
         ],
         [
-            "GCC",
-            "CAC",
+            "CCG",
+            "CTA",
             "GGA",
-            "ACA",
+            "GCC",
             "ATG",
             "GGA",
             "TAA"
         ],
         [
-            "CAC",
-            "CTA",
-            "GCC",
-            "TCT",
+            "ATG",
             "CGT",
-            "TGG",
-            "GAG"
-        ],
-        [
-            "ATG",
+            "GCC",
+            "TTC",
             "GCC",
             "TAA",
-            "TCT",
-            "ATG",
-            "CTA",
-            "ATG"
-        ],
-        [
-            "CAC",
-            "CTA",
-            "GCC",
-            "GAG",
-            "ATG",
-            "TAA",
-            "GAG"
-        ],
-        [
-            "AGC",
-            "GCC",
-            "GGA",
-            "GAG",
-            "AAT",
-            "CTA",
             "GCC"
         ],
         [
             "CCG",
             "CGT",
             "TAA",
-            "GAG",
-            "AAT",
-            "CTA",
-            "TTC"
-        ],
-        [
-            "ATG",
             "GCC",
-            "AGC",
-            "TCT",
-            "GCC",
-            "TAA",
-            "GAG"
-        ],
-        [
-            "CAC",
-            "CAC",
-            "AGC",
-            "TCT",
+            "CGT",
             "CTA",
-            "TAA",
             "TAA"
         ],
         [
@@ -1287,122 +1032,293 @@
             "ACA",
             "GCC",
             "GGA",
-            "TTC"
-        ],
-        [
-            "AGC",
-            "CTA",
-            "TAA",
-            "GAG",
-            "CGT",
-            "GGA",
             "GCC"
         ],
         [
-            "AGC",
-            "GTT",
-            "GGA",
-            "ACA",
+            "CAC",
             "GCC",
+            "TTC",
+            "TTC",
+            "GCC",
+            "TAA",
+            "TTC"
+        ],
+        [
+            "GCC",
+            "CAC",
+            "AGC",
+            "ACA",
+            "AAT",
             "CGT",
             "ATG"
         ],
         [
-            "CCG",
-            "CTA",
+            "GCC",
+            "CGT",
+            "AGC",
             "TTC",
+            "GCC",
+            "GGA",
+            "TTC"
+        ],
+        [
+            "CCG",
+            "CAC",
+            "GCC",
             "TCT",
             "GCC",
-            "CTA",
+            "CGT",
+            "TAA"
+        ],
+        [
+            "GCC",
+            "CAC",
+            "TAA",
+            "TCT",
+            "CGT",
+            "TGG",
             "GCC"
+        ],
+        [
+            "CAC",
+            "CGT",
+            "TTC",
+            "GAG",
+            "GCC",
+            "TAA",
+            "GCC"
+        ],
+        [
+            "AGC",
+            "CAC",
+            "GCC",
+            "TTC",
+            "GCC",
+            "TAA",
+            "TAA"
+        ],
+        [
+            "CAC",
+            "CAC",
+            "GCC",
+            "ACA",
+            "ATG",
+            "CTA",
+            "ATG"
+        ],
+        [
+            "GCC",
+            "GTT",
+            "TAA",
+            "TCT",
+            "ATG",
+            "CGT",
+            "TTC"
         ],
         [
             "ATG",
             "GCC",
-            "GGA",
             "GCC",
+            "TTC",
+            "AAT",
+            "TAA",
+            "GCC"
+        ],
+        [
+            "CAC",
+            "CAC",
+            "GCC",
+            "ACA",
+            "GCC",
+            "CTA",
+            "TAA"
+        ],
+        [
+            "AGC",
+            "CAC",
+            "TTC",
+            "TTC",
+            "AAT",
+            "TAA",
+            "TAA"
+        ],
+        [
+            "GCC",
+            "GCC",
+            "GCC",
+            "GAG",
+            "ATG",
+            "CTA",
+            "GAG"
+        ],
+        [
+            "ATG",
+            "CAC",
+            "AGC",
+            "ACA",
+            "ATG",
             "CGT",
-            "TGG",
             "ATG"
         ],
         [
             "AGC",
-            "GTT",
+            "CTA",
+            "GGA",
+            "TCT",
+            "ATG",
+            "TGG",
+            "GCC"
+        ],
+        [
             "GCC",
-            "GCC",
+            "CTA",
+            "TAA",
+            "ACA",
             "AAT",
             "CTA",
-            "GCC"
+            "TTC"
         ],
         [
+            "CCG",
+            "CGT",
+            "GCC",
+            "TTC",
             "ATG",
+            "TGG",
+            "ATG"
+        ],
+        [
+            "CAC",
+            "CTA",
+            "GGA",
+            "TTC",
+            "CTA",
+            "TAA",
+            "TAA"
+        ],
+        [
+            "GCC",
+            "CTA",
+            "TTC",
+            "GAG",
+            "ATG",
+            "TGG",
+            "GAG"
+        ],
+        [
+            "CAC",
+            "GTT",
+            "AGC",
+            "ACA",
+            "AAT",
+            "CGT",
+            "TAA"
+        ],
+        [
+            "CAC",
+            "GCC",
+            "GGA",
+            "GAG",
+            "CTA",
+            "GGA",
+            "TAA"
+        ],
+        [
+            "AGC",
+            "GCC",
+            "GCC",
+            "TTC",
+            "AAT",
+            "TGG",
+            "TTC"
+        ],
+        [
+            "CAC",
             "CGT",
             "TTC",
-            "TTC",
+            "TCT",
+            "ATG",
+            "CTA",
+            "GAG"
+        ],
+        [
+            "GCC",
+            "CGT",
+            "GGA",
+            "ACA",
             "CTA",
             "CGT",
             "ATG"
         ],
         [
-            "CCG",
-            "CAC",
+            "AGC",
+            "CTA",
             "GGA",
             "TCT",
-            "CGT",
-            "CTA",
+            "GCC",
+            "TAA",
+            "TTC"
+        ],
+        [
+            "ATG",
+            "CAC",
+            "GGA",
+            "ACA",
+            "AAT",
+            "TGG",
             "TTC"
         ],
         [
             "GCC",
-            "CGT",
-            "AGC",
-            "TTC",
             "CTA",
+            "GGA",
+            "GCC",
+            "GCC",
+            "GGA",
+            "TTC"
+        ],
+        [
+            "CCG",
+            "CGT",
+            "TTC",
+            "TTC",
+            "AAT",
             "GGA",
             "GCC"
         ],
         [
-            "AGC",
-            "GTT",
+            "CCG",
+            "CAC",
+            "GGA",
             "GCC",
-            "GAG",
+            "CGT",
+            "TAA",
+            "TTC"
+        ],
+        [
+            "GCC",
+            "CAC",
+            "GCC",
+            "TCT",
             "CGT",
             "TGG",
             "GCC"
         ],
         [
-            "AGC",
-            "CAC",
-            "AGC",
-            "ACA",
+            "CCG",
             "CTA",
-            "CTA",
-            "GCC"
-        ],
-        [
-            "AGC",
-            "CGT",
-            "AGC",
+            "GCC",
             "ACA",
-            "ATG",
             "CGT",
+            "CTA",
             "ATG"
         ],
         [
-            "ATG",
-            "GCC",
-            "TAA",
-            "GCC",
-            "ATG",
-            "CGT",
-            "TTC"
-        ],
-        [
-            "CCG",
-            "CGT",
+            "AGC",
             "GCC",
             "TTC",
-            "CTA",
+            "GAG",
+            "ATG",
             "GGA",
             "GCC"
         ]
@@ -1410,210 +1326,7 @@
     "CCC": [
         [
             "ACGT",
-            "ATG",
-            "GTGGAGTGATGAACCA",
-            "CTA",
-            "GTCA"
-        ],
-        [
-            "ACGT",
             "CAC",
-            "GTGGAGTGATGAACCA",
-            "CGT",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "ATG",
-            "GTGGAGTGATGAACCA",
-            "GCC",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "AGC",
-            "GTGGAGTGATGAACCA",
-            "GCC",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "CAC",
-            "GTGGAGTGATGAACCA",
-            "CGT",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "CAC",
-            "GTGGAGTGATGAACCA",
-            "GCC",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "CAC",
-            "GTGGAGTGATGAACCA",
-            "GTT",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "AGC",
-            "GTGGAGTGATGAACCA",
-            "GTT",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "AGC",
-            "GTGGAGTGATGAACCA",
-            "CTA",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "ATG",
-            "GTGGAGTGATGAACCA",
-            "CGT",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "AGC",
-            "GTGGAGTGATGAACCA",
-            "GCC",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "CAC",
-            "GTGGAGTGATGAACCA",
-            "CAC",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "CCG",
-            "GTGGAGTGATGAACCA",
-            "CTA",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "GCC",
-            "GTGGAGTGATGAACCA",
-            "CAC",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "CAC",
-            "GTGGAGTGATGAACCA",
-            "CAC",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "CCG",
-            "GTGGAGTGATGAACCA",
-            "CAC",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "CCG",
-            "GTGGAGTGATGAACCA",
-            "CTA",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "GCC",
-            "GTGGAGTGATGAACCA",
-            "GCC",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "CAC",
-            "GTGGAGTGATGAACCA",
-            "CTA",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "CCG",
-            "GTGGAGTGATGAACCA",
-            "CTA",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "AGC",
-            "GTGGAGTGATGAACCA",
-            "CAC",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "CCG",
-            "GTGGAGTGATGAACCA",
-            "GTT",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "ATG",
-            "GTGGAGTGATGAACCA",
-            "CAC",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "CCG",
-            "GTGGAGTGATGAACCA",
-            "CAC",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "CCG",
-            "GTGGAGTGATGAACCA",
-            "CTA",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "AGC",
-            "GTGGAGTGATGAACCA",
-            "CTA",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "GCC",
-            "GTGGAGTGATGAACCA",
-            "CGT",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "ATG",
-            "GTGGAGTGATGAACCA",
-            "CAC",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "CAC",
-            "GTGGAGTGATGAACCA",
-            "CAC",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "ATG",
             "GTGGAGTGATGAACCA",
             "GCC",
             "GTCA"
@@ -1623,41 +1336,6 @@
             "CCG",
             "GTGGAGTGATGAACCA",
             "GTT",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "CCG",
-            "GTGGAGTGATGAACCA",
-            "CAC",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "ATG",
-            "GTGGAGTGATGAACCA",
-            "CAC",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "GCC",
-            "GTGGAGTGATGAACCA",
-            "CTA",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "ATG",
-            "GTGGAGTGATGAACCA",
-            "GTT",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "CCG",
-            "GTGGAGTGATGAACCA",
-            "GCC",
             "GTCA"
         ],
         [
@@ -1676,21 +1354,49 @@
         ],
         [
             "ACGT",
-            "AGC",
+            "GCC",
             "GTGGAGTGATGAACCA",
-            "CAC",
+            "CGT",
             "GTCA"
         ],
         [
             "ACGT",
             "CCG",
             "GTGGAGTGATGAACCA",
-            "CTA",
+            "GCC",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "ATG",
+            "GTGGAGTGATGAACCA",
+            "GCC",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "CCG",
+            "GTGGAGTGATGAACCA",
+            "CAC",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "ATG",
+            "GTGGAGTGATGAACCA",
+            "CAC",
             "GTCA"
         ],
         [
             "ACGT",
             "AGC",
+            "GTGGAGTGATGAACCA",
+            "GCC",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "CCG",
             "GTGGAGTGATGAACCA",
             "CTA",
             "GTCA"
@@ -1704,7 +1410,56 @@
         ],
         [
             "ACGT",
+            "GCC",
+            "GTGGAGTGATGAACCA",
+            "GTT",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "ATG",
+            "GTGGAGTGATGAACCA",
+            "CTA",
+            "GTCA"
+        ],
+        [
+            "ACGT",
             "CAC",
+            "GTGGAGTGATGAACCA",
+            "CTA",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "GCC",
+            "GTGGAGTGATGAACCA",
+            "CTA",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "CAC",
+            "GTGGAGTGATGAACCA",
+            "CGT",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "GCC",
+            "GTGGAGTGATGAACCA",
+            "CTA",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "GCC",
+            "GTGGAGTGATGAACCA",
+            "CGT",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "AGC",
             "GTGGAGTGATGAACCA",
             "GTT",
             "GTCA"
@@ -1718,23 +1473,9 @@
         ],
         [
             "ACGT",
-            "CCG",
+            "AGC",
             "GTGGAGTGATGAACCA",
             "GTT",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "CAC",
-            "GTGGAGTGATGAACCA",
-            "CAC",
-            "GTCA"
-        ],
-        [
-            "ACGT",
-            "GCC",
-            "GTGGAGTGATGAACCA",
-            "GCC",
             "GTCA"
         ],
         [
@@ -1742,6 +1483,13 @@
             "GCC",
             "GTGGAGTGATGAACCA",
             "GTT",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "GCC",
+            "GTGGAGTGATGAACCA",
+            "CTA",
             "GTCA"
         ],
         [
@@ -1753,9 +1501,156 @@
         ],
         [
             "ACGT",
-            "GCC",
+            "AGC",
+            "GTGGAGTGATGAACCA",
+            "GTT",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "CAC",
+            "GTGGAGTGATGAACCA",
+            "GTT",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "CCG",
+            "GTGGAGTGATGAACCA",
+            "CAC",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "CCG",
+            "GTGGAGTGATGAACCA",
+            "CAC",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "CAC",
             "GTGGAGTGATGAACCA",
             "GCC",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "CCG",
+            "GTGGAGTGATGAACCA",
+            "GTT",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "AGC",
+            "GTGGAGTGATGAACCA",
+            "CAC",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "CAC",
+            "GTGGAGTGATGAACCA",
+            "CAC",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "CCG",
+            "GTGGAGTGATGAACCA",
+            "CAC",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "CCG",
+            "GTGGAGTGATGAACCA",
+            "GTT",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "AGC",
+            "GTGGAGTGATGAACCA",
+            "CGT",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "CAC",
+            "GTGGAGTGATGAACCA",
+            "CAC",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "GCC",
+            "GTGGAGTGATGAACCA",
+            "CTA",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "GCC",
+            "GTGGAGTGATGAACCA",
+            "CTA",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "GCC",
+            "GTGGAGTGATGAACCA",
+            "CTA",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "ATG",
+            "GTGGAGTGATGAACCA",
+            "CAC",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "GCC",
+            "GTGGAGTGATGAACCA",
+            "GTT",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "AGC",
+            "GTGGAGTGATGAACCA",
+            "CAC",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "AGC",
+            "GTGGAGTGATGAACCA",
+            "CGT",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "ATG",
+            "GTGGAGTGATGAACCA",
+            "CGT",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "ATG",
+            "GTGGAGTGATGAACCA",
+            "GCC",
+            "GTCA"
+        ],
+        [
+            "ACGT",
+            "ATG",
+            "GTGGAGTGATGAACCA",
+            "GTT",
             "GTCA"
         ]
     ]

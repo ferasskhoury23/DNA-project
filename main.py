@@ -31,7 +31,7 @@ if __name__ == '__main__':
     (result_with_symbols, stats_dict) = simulation.run(Input, stats_dict)
     fm.dump_out_sim('files/output_symbols_str.json', result_with_symbols, Input.list_of_lines,Input.dict_of_lines, True, True)
     out_dict_list_of_shortmers = fm.dump_out_sim('files/output_symbols.json', result_with_symbols, Input.list_of_lines,Input.dict_of_lines, True)
-    fm.dump_out_statistics('files/out1put_statistics.json', stats_dict)
+    fm.dump_out_statistics('files/output_statistics.json', stats_dict)
 
     '''simulate with sequences'''
     result_with_sequence = simulation.run_shortmers(Input)
