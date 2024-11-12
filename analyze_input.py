@@ -25,8 +25,8 @@ class InputAnalyze:
     code_distance: int
     shortmers_file_path: str
     sequence_design_file_path: str
-    def __init__(self , num_of_copies , shortmers_file_path , sequence_design_file_path):
-        self.number_of_shortmers_per_symbol = 5
+    def __init__(self , num_of_copies , shormters_per_letter,  shortmers_file_path , sequence_design_file_path):
+        self.number_of_shortmers_per_symbol = shormters_per_letter
         self.shortmers_file_path = shortmers_file_path
         self.sequence_design_file_path = sequence_design_file_path
         self.num_of_copies = num_of_copies
@@ -38,12 +38,12 @@ class InputAnalyze:
         self.code_distance = find_minimum_distance(self.shortmers_dict)
         fm.dump_alphabets(self.alphabet_dict , 'files/alphabets.json')
     def print_input_stats(self):
-        print("--------------------------------------------Input Statistics-------------------------------------------")
-        print(f"Num of Shortmers is : {self.numOfShortmers}")
-        print("Shortmer size is : ", self.shortmerSize)
-        print("Code Hamming Distance", self.code_distance)
-        print(f"Number of Alphabets is : {self.number_of_alphabets} , therefore we need {math.floor(log2(self.number_of_alphabets))} bits")
-        print("-------All input has been collected and analyzed, it's now time to proceed with the simulation---------")
+        print("--------------------------------------------Input Statistics---------------------------------------- \n")
+        print(f"Num of Shortmers is : {self.numOfShortmers} \n")
+        print("Shortmer size is : ", self.shortmerSize, " \n")
+        print("Code Hamming Distance", self.code_distance, " \n")
+        print(f"Number of Alphabets is : {self.number_of_alphabets} , therefore we need {math.floor(log2(self.number_of_alphabets))} bits \n")
+        print("-------All input has been collected and analyzed, it's now time to proceed with the simulation------ \n")
 
 
 '''

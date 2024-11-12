@@ -20,7 +20,7 @@ def fix_clusters(error_dict, strand_length_dict, shortmers, num_of_copies, seqma
     for key, cluster in error_dict.items():
         result[key],result_strand[key] = fix_main(cluster, shortmers, num_of_copies, strand_length_dict[key], seqma_length , alphabets_dict)
 
-    return result,result_strand
+    return result, result_strand
 
 
 '''
@@ -31,7 +31,7 @@ def fix_main(cluster, shortmers , num_of_copies, strand_length, seqma_length , a
     result_strand = str()
     distance_arr = compare_strand_lengths(cluster, strand_length, num_of_copies)
     shortmer_length = len(shortmers['X1'])
-    string_rate = 0.6
+    string_rate = 0.6 #we choose it after an assumption
     #if we dont use .copy() - shallow copy. they will have the same reference in memory
     fixed_cluster = cluster
 

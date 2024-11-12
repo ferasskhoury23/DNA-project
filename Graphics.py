@@ -4,7 +4,14 @@ import random
 import pandas as pd
 import seaborn as sns
 
-# This Function Visualizes the dictionary in a formatted style with keys and values aligned in columns
+
+"""    
+Graphics - Final Version
+"""
+
+'''
+This Function Visualizes the dictionary in a formatted style with keys and values aligned in columns
+'''
 def visualize_dictionary(data):
     num_columns = 2
     num_rows = len(data) // num_columns + (len(data) % num_columns > 0)
@@ -33,9 +40,9 @@ def visualize_dictionary(data):
     plt.show()
 
 
-# This Function Visualizes a subset of the given dictionary of shortmers in a decorated matrix.
-
-
+'''
+This Function Visualizes a subset of the given dictionary of shortmers in a decorated matrix.
+'''
 def visualize_alphabet(alphabet, num_sigmas=20):
     # Select a random sample of sigmas
     random_sigmas = random.sample(list(alphabet.keys()), num_sigmas)
@@ -79,7 +86,9 @@ def visualize_alphabet(alphabet, num_sigmas=20):
 
     plt.show()
 
-
+'''
+This function represents statics and comparison between two shortmers
+'''
 def compare_shortmers(dict1, dict2):
     letters = list(dict1.keys())
     random_letter = random.choice(letters)

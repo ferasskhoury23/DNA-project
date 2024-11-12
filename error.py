@@ -20,7 +20,7 @@ and the difference between two errors is the shortmers's size
 """
 def generate_random_numbers(count, start, end):
     # Check if the range can accommodate the required count with a minimum distance of 3
-    if count > (end - start) // 3 + 1:
+    if count > (end - start) // (3 + 1):
         raise ValueError("Count exceeds the range of unique numbers available with minimum distance of 3.")
 
     # Generate a list of possible numbers

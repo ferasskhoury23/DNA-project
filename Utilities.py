@@ -31,30 +31,35 @@ def pick_number(min, max):
 This function takes initial parameters to start the stimulation generator
 '''
 def parameters_from_input():
-    print("Please enter minimum and maximum values for picking The number of copies :")
+    print("\nPlease enter the size of the subset of shortmers which represent the letters: ")
+    shortmers_per_letter = int(input())
+    print("\n------------------------------------------------------------------------------------------------------ \n")
+    print("Please enter minimum and maximum values for picking The number of copies: ")
     print("Min value : ")
     min_input_value = int(input())
     print("Max value : ")
     max_input_value = int(input())
     if ((min_input_value < 0) or (max_input_value < 0) or (max_input_value < min_input_value)):
-        raise ValueError("Invalid Inputs")
+        raise ValueError("Invalid Inputs \n")
 
     num_of_copies = pick_number(min_input_value, max_input_value)
-    print("number of copies is :", num_of_copies)
-    print("-----------------------------------------------------------------------------------------------------------")
-    print("Please enter error_rate between 0 and 0.05")
-    error_rate = float(input())
-    if ((error_rate > 0.05) or (error_rate < 0)):
+    print("number of copies is :", num_of_copies, " \n")
+    print("-------------------------------------------------------------------------------------------------------- \n")
+    print("Please enter error_rate between 0% and 15%")
+    error_rate = (float(input()) / 100)
+    if ((error_rate > 0.1) or (error_rate < 0)):
         raise ValueError("Error Rate Invalid")
 
-    return num_of_copies, error_rate
+    return shortmers_per_letter, num_of_copies, error_rate
+
 
 def is_sublist(small, big):
-    """Helper function to check if `small` list is a sublist of `big`."""
+    ''' Helper function to check if `small` list is a sublist of `big` '''
     for i in range(len(big) - len(small) + 1):
         if big[i:i+len(small)] == small:
             return True
     return False
+
 
 def find_longest_key_with_sublist(target_list, dict_of_lists):
     longest_match = []
